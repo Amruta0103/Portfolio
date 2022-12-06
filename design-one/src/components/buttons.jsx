@@ -11,6 +11,7 @@ const Buttons = () => {
   border-radius: 1rem;
   `
   const TomatoButton = styled(Button)`
+  display: inline-block;
   color: tomato;
   border-color: tomato;
   `
@@ -20,6 +21,7 @@ const Buttons = () => {
       <Button>Normal</Button>
       <Button primary>Colorful</Button>
       <TomatoButton>Tomatoess!!</TomatoButton>
+      <TomatoButton as="a" href="#">Link wala Tomato Button</TomatoButton>
     </div>
   )
 }
