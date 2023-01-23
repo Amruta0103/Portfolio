@@ -11,8 +11,12 @@ function App() {
   height: 100vh;
   `
   const MainBoxInfo = styled.div`
-  display:flex;
-  gap: 10rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 2rem;
+  height: 70%;
+  border: 1px solid red;
   `
   return (
     <AppBox className="App">
@@ -21,6 +25,7 @@ function App() {
         <HeadLine />
         <Info />
       </MainBoxInfo>
+
     </AppBox>
   );
 }

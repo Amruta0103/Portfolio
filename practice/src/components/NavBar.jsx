@@ -25,7 +25,7 @@ const NavBar = () => {
       <OptionsList>
         <Options>LinkedIn ⚛️</Options>
         <Options>GitHub ⚛️</Options>
-        <Options>Resume ⚛️</Options>
+        <Options>Resumé ⚛️</Options>
         <Options>Let's Connect ⚛️</Options>
       </OptionsList>
     </NavBar>
