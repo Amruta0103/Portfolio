@@ -3,7 +3,6 @@ import styled from "styled-components";
 
 const NavBar = () => {
   const NavBar = styled.div`
-  background : palevioletred;
   color: white;
   font-size: 1em;
   padding: 0.5em 0.5em;
