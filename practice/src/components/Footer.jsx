@@ -1,11 +1,15 @@
 import styled from "styled-components";
 // ⚛️ this is a temp logo, change it later!!
 
-const NavBar = () => {
-  const NavBar = styled.div`
+const Footer = () => {
+  const Footer = styled.div`
+  position: fixed;
+  bottom: 0rem;
+  right: 0rem;
   color: white;
   font-size: 1em;
-  padding: 0.5em 0.5em;
+  width: 100%;
+  padding: 1rem;
   margin: auto;
   text-align: right;
   `
@@ -21,15 +25,15 @@ const NavBar = () => {
   list-style:none;
   `
   return(
-    <NavBar>
+    <Footer>
       <OptionsList>
         <Options>LinkedIn ⚛️</Options>
         <Options>GitHub ⚛️</Options>
         <Options>Resumé ⚛️</Options>
         <Options>Let's Connect ⚛️</Options>
       </OptionsList>
-    </NavBar>
+    </Footer>
   )
 }
 
-export default NavBar;
+export default Footer;

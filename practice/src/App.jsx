@@ -3,29 +3,29 @@ import styled from 'styled-components';
 import './App.css';
 import HeadLine from './components/HeadLine';
 import Info from './components/Info';
-import NavBar from './components/NavBar';
+import Footer from './components/Footer';
+import ProjectCards from './components/ProjectCards';
 
 function App() {
   const AppBox = styled.div`
-  background: #ABC270;
+  background: var(--brown);
   height: 100vh;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
   `
   const MainBoxInfo = styled.div`
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  margin: 2rem;
-  height: 70%;
-  border: 1px solid red;
   `
   return (
     <AppBox className="App">
-      <NavBar />
       <MainBoxInfo >
         <HeadLine />
         <Info />
       </MainBoxInfo>
-
+      <ProjectCards/>
+      <Footer />
     </AppBox>
   );
 }
