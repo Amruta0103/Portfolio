@@ -21,8 +21,16 @@ const Footer = () => {
   padding: 0em;
   `
   const Options = styled.li`
-  padding: 0.5em 1em;
+  padding: 0.5em;
   list-style:none;
+  border-radius: 2rem;
+  margin: 0.5rem;
+  cursor: pointer;
+
+  &:hover{
+    background: var(--yellow);
+    color: var(--brown);
+  }
   `
   return(
     <Footer>

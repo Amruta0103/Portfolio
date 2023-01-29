@@ -10,9 +10,10 @@ display: flex;
 const Card = styled.div`
 height: 230px;
 width: 200px;
-border: 1px solid black;
+border: 1px solid var(--yellow);
 border-radius: 2rem;
 margin: auto 1rem;
+cursor:pointer;
 
 &:hover{
   background: var(--yellow);
