@@ -2,27 +2,27 @@ import styled from "styled-components";
 
 const Info = () => {
   const Info = styled.div`
+  font-size:18px;
   margin: 1rem auto;
   color: var(--green);
   `
   const HoverBlock = styled.div`
-  width: 40%;
+  padding: 1rem;
   margin: auto;
-  &:hover {
-    cursor: default;
-    text-decoration: underline;
-    text-decoration-color: var(--yellow);
-  }
   `
   
   const InfoText = styled.div`
   margin: auto;
+  &:hover {
+    cursor: default;
+    text-decoration:underline;
+  }
   `
 
   return(
     <Info>
       <HoverBlock>
-        <InfoText>Hello, I am publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before final copy is available.</InfoText>
+        <InfoText>Hello, I am an aspiring web Developer.<br /> I love Coding web-pages that are convinient to use & beautiful to eyes.</InfoText>
       </HoverBlock>
     </Info>
   )

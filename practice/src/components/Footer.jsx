@@ -3,21 +3,20 @@ import styled from "styled-components";
 
 const Footer = () => {
   const Footer = styled.div`
-  position: fixed;
   bottom: 0rem;
   right: 0rem;
   color: white;
-  font-size: 1em;
+  font-size: 16px;
   width: 100%;
-  padding: 1rem;
-  margin: auto;
+  padding: 0.5rem 1rem;
+  margin: 0rem;
   text-align: right;
   `
   const OptionsList = styled.ul`
   display: flex;
   flex-direction: row;
   width: fit-content;
-  margin: auto 1rem auto auto;
+  margin: auto 0rem auto auto;
   padding: 0em;
   `
   const Options = styled.li`

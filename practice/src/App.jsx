@@ -9,10 +9,11 @@ import ProjectCards from './components/ProjectCards';
 function App() {
   const AppBox = styled.div`
   background: var(--brown);
-  height: 100vh;
+  max-height: 100%;
+  padding: 0rem 2rem;
   display: flex;
-  flex-direction: column;
-  gap: 1rem;
+  flex-direction:column;
+  gap: 3rem;
   `
   const MainBoxInfo = styled.div`
   display: flex;
