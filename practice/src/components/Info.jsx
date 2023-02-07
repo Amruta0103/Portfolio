@@ -22,7 +22,7 @@ const Info = () => {
   return(
     <Info>
       <HoverBlock>
-        <InfoText>Hello, I am an aspiring web Developer.<br /> I love Coding web-pages that are convinient to use & beautiful to eyes.</InfoText>
+        <InfoText>Hello, I am a web Developer.<br /> I love Coding web-pages that are convinient to use & beautiful to eyes.</InfoText>
       </HoverBlock>
     </Info>
   )
