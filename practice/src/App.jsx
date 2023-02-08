@@ -5,11 +5,12 @@ import HeadLine from './components/HeadLine';
 import Info from './components/Info';
 import Header from './components/Header';
 import ProjectCards from './components/ProjectCards';
+// import Footer from './components/Footer';
 
 function App() {
   const AppBox = styled.div`
   background: var(--brown);
-  max-height: 100%;
+  height: 100%;
   flex-direction: column;
   gap: 3rem;
   display: flex;
@@ -27,6 +28,7 @@ function App() {
         <Info />
       </MainBoxInfo>
       <ProjectCards/>
+      {/* <Footer /> */}
     </AppBox>
   );
 }

@@ -6,7 +6,7 @@ width: auto;
 height: 15rem;
 justify-content: center;
 display: flex;
-margin: 0.9rem auto;
+margin: 1rem auto 1.3rem;
 `
 const Card = styled.div`
 height: 230px;
