@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 const Info = () => {
   const Info = styled.div`
-  font-size:18px;
+  font-size: 20px;
   margin: 1rem auto;
   color: var(--green);
   `
