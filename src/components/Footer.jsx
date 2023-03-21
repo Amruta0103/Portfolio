@@ -7,7 +7,7 @@ const Footer = () => {
   height: 50px
   `
   return(
-    <Footer>Hello this is footer</Footer>
+    <Footer></Footer>
   )
 }
 

@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import envelope from "../logo/envelope-solid.svg";
+// import envelope from "../logo/envelope-solid.svg";
 import linkedin from "../logo/linkedin.svg";
 import github from "../logo/square-github.svg";
 import resume from "../logo/user-solid.svg";
@@ -45,14 +45,26 @@ const Header = () => {
   border: 2px solid transparent;
   margin: 5px;
   `
-  
+  const A = styled.a`
+  font-size inherit;
+  text-decoration: none;
+  color: inherit;
+  `
   return(
     <Header>
       <OptionsList>
-        <Options>LinkedIn <Logo alt={linkedin} src={linkedin}/></Options>
-        <Options>GitHub <Logo alt={github} src={github} /></Options>
-        <Options>Resumé <Logo alt={resume} src={resume} /></Options>
-        <Options>Let's Connect  <Logo alt={envelope} src={envelope}/> </Options>
+        <A target="_blank" href="https://www.linkedin.com/in/amruta-d-4366341b8/">
+          <Options>LinkedIn <Logo alt={linkedin} src={linkedin}/></Options>
+        </A>
+        <A target="_blank" href="https://github.com/Amruta0103">
+          <Options>GitHub <Logo alt={github} src={github} /></Options>
+        </A>
+        <A target="_blank" href="">
+          <Options>Resumé <Logo alt={resume} src={resume} /></Options>
+        </A>
+        {/* <A target="_blank" href="mailto:amydharap@gmail.com">
+          <Options>Let's Connect  <Logo alt={envelope} src={envelope}/> </Options>
+        </A> */}
       </OptionsList>
     </Header>
   )
