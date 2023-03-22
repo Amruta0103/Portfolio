@@ -1,9 +1,8 @@
 import styled from "styled-components";
-// import envelope from "../logo/envelope-solid.svg";
-import linkedin from "../logo/linkedin.svg";
-import github from "../logo/square-github.svg";
-import resume from "../logo/user-solid.svg";
-// ⚛️ this is a temp logo, change it later!!
+import linkedin from "../assets/linkedin.svg";
+import github from "../assets/square-github.svg";
+import resume from "../assets/file-arrow-down-solid.svg";
+import pdf from "../assets/AmrutaDharap.pdf";
 
 const Header = () => {
   const Header = styled.div`
@@ -59,7 +58,7 @@ const Header = () => {
         <A target="_blank" href="https://github.com/Amruta0103">
           <Options>GitHub <Logo alt={github} src={github} /></Options>
         </A>
-        <A target="_blank" href="">
+        <A target="_blank" href={pdf} download>
           <Options>Resumé <Logo alt={resume} src={resume} /></Options>
         </A>
         {/* <A target="_blank" href="mailto:amydharap@gmail.com">

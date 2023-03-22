@@ -9,15 +9,15 @@ display: flex;
 margin: 1rem auto;
 `
 const Card = styled.div`
-height: 230px;
+margin: 3rem 1rem;
+height: 100px;
 width: 200px;
-border: 1px solid var(--yellow);
+border: 3px solid black;
 border-radius: 2rem;
-margin: auto 1rem;
 cursor:pointer;
 
 &:hover{
-  background: var(--yellow);
+  border: 3px solid var(--yellow);
 }
 `
 return(
