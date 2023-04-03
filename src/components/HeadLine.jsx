@@ -4,8 +4,8 @@ const HeadLine = () => {
 const HeadLine = styled.div`
 margin: 1rem;
 font-size: 70px;
-font-weight: 500;
-color: var(--peach);
+font-weight: 300;
+color: var(--cornblue);
 `
 return(
   <HeadLine>Amruta Dharap</HeadLine>

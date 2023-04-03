@@ -4,7 +4,8 @@ const Info = () => {
   const Info = styled.div`
   font-size: 20px;
   margin: 1rem auto;
-  color: var(--green);
+  font-weight: 300;
+  color: var(--lightgrey);
   `
   const HoverBlock = styled.div`
   padding: 1rem;
@@ -13,10 +14,7 @@ const Info = () => {
   
   const InfoText = styled.div`
   margin: auto;
-  &:hover {
-    cursor: default;
-    text-decoration:underline;
-  }
+  cursor: default;
   `
 
   return(

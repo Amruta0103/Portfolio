@@ -34,8 +34,7 @@ const Header = () => {
   cursor: pointer;
 
   &:hover{
-    background: var(--yellow);
-    color: var(--brown);
+    background: var(--cornblue);
   }
   `
   const Logo = styled.img`
