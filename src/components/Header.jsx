@@ -5,11 +5,30 @@ import resume from "../assets/file-arrow-down-solid.svg";
 import pdf from "../assets/AmrutaDharap.pdf";
 
 const Header = () => {
-  const Header = styled.div`
+  return(
+    <HeaderBox>
+      <OptionsList>
+        <A target="_blank" href="https://www.linkedin.com/in/amruta-d-4366341b8/">
+          <Options>LinkedIn <Logo alt={linkedin} src={linkedin}/></Options>
+        </A>
+        <A target="_blank" href="https://github.com/Amruta0103">
+          <Options>GitHub <Logo alt={github} src={github} /></Options>
+        </A>
+        <A target="_blank" href={pdf} download>
+          <Options>Resumé <Logo alt={resume} src={resume} /></Options>
+        </A>
+        {/* <A target="_blank" href="mailto:amydharap@gmail.com">
+          <Options>Let's Connect  <Logo alt={envelope} src={envelope}/> </Options>
+        </A> */}
+      </OptionsList>
+    </HeaderBox>
+  )
+}
+
+const HeaderBox = styled.div`
   position: relative;
   top: 0rem;
   right: 0rem;
-  color: white;
   font-size: 15px;
   width: 100%;
   padding: auto;
@@ -32,9 +51,11 @@ const Header = () => {
   border-radius: 2rem;
   margin: 0.5rem;
   cursor: pointer;
+  border: 1px solid transparent;
 
   &:hover{
-    background: var(--cornblue);
+    background: ${props => props.theme.accentColor};
+    color: ${props =>props.theme.background};
   }
   `
   const Logo = styled.img`
@@ -48,24 +69,5 @@ const Header = () => {
   text-decoration: none;
   color: inherit;
   `
-  return(
-    <Header>
-      <OptionsList>
-        <A target="_blank" href="https://www.linkedin.com/in/amruta-d-4366341b8/">
-          <Options>LinkedIn <Logo alt={linkedin} src={linkedin}/></Options>
-        </A>
-        <A target="_blank" href="https://github.com/Amruta0103">
-          <Options>GitHub <Logo alt={github} src={github} /></Options>
-        </A>
-        <A target="_blank" href={pdf} download>
-          <Options>Resumé <Logo alt={resume} src={resume} /></Options>
-        </A>
-        {/* <A target="_blank" href="mailto:amydharap@gmail.com">
-          <Options>Let's Connect  <Logo alt={envelope} src={envelope}/> </Options>
-        </A> */}
-      </OptionsList>
-    </Header>
-  )
-}
 
 export default Header;

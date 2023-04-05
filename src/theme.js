@@ -2,19 +2,21 @@ import { createGlobalStyle } from "styled-components";
 
 const GlobalStyles = createGlobalStyle`
   body {
-    background: ${({ theme }) => theme.body};
+    background-color: ${({ theme }) => theme.background};
     color: ${({ theme }) => theme.text};
     transition: background 0.2s ease-in, color 0.2s ease-in;
   }
   `
 export const darkTheme = {
-  // cornblue: "#6495ed",
-  // lightgrey: "#a9a9a9",
+  text: "#c9dbff",
   background: "#121212",
+  accentColor:"#9db7ff",
 }
 
 export const lightTheme =  {
-  background:"#90ee90",
+  accentColor: "#9db7ff",
+  text: "#121212",
+  background:"#c9dbff",
 }
 
 export default GlobalStyles;

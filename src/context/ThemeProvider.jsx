@@ -1,0 +1,16 @@
+import { useState, useContext, createContext } from "react";
+
+const ThemeContext = createContext();
+
+export function ThemeProvider({children}) {
+  const {isDarkTheme , setTheme} = useState(false);
+  return(
+    <ThemeContext.Provider value={{isDarkTheme, setTheme}}>
+      {children}
+    </ThemeContext.Provider>
+  )
+}
+
+export function useTheme (){
+  return useContext(ThemeContext);
+}

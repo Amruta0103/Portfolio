@@ -9,12 +9,8 @@
   --cornblue: #6495ed;
   --lightgrey: #a9a9a9;
   --black: #121212;
-}
-
-.App {
-  max-height: 100%;
-  max-width: 100%;
-  text-align: center;
-  font-family: 'Noto Serif JP', serif;
-  font-family: 'Source Sans Pro', sans-serif;
+  --greenOne:#DDFFBB;
+  --greenTwo:#DDFFBB;
+  --greenThree: #B3C99C;
+  --greenFour: #A4BC92;
 }

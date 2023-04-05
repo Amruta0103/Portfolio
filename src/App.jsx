@@ -1,45 +1,61 @@
 // import logo from './logo.svg';
-import styled from 'styled-components';
+import styled, { ThemeProvider } from 'styled-components';
 import './App.css';
 import HeadLine from './components/HeadLine';
 import Info from './components/Info';
 import Header from './components/Header';
 import ProjectCards from './components/ProjectCards';
-import ToggleTheme from './components/ToggleTheme';
-// import GlobalStyles from './theme';
-// import { theme,darkTheme, lightTheme} from './theme';
-// import Footer from './components/Footer';
+import GlobalStyles, { darkTheme, lightTheme } from './theme';
+import { useState } from 'react';
 
 function App() {
-  const AppBox = styled.div`
-  background: var(--lightgreen);
-  max-height: 100%;
-  flex-direction: column;
-  gap: 2.5rem;
-  display: flex;
-  justify-content: space-between;
-  `
-  const MainBoxInfo = styled.div`
-  display: flex;
-  flex-direction: column;
-  `
+  const [isDarkTheme, setTheme] = useState(false);
+  console.log("current theme",isDarkTheme)
+  
   return (
-    <AppBox className="App">
-      {/* <ThemeProvider theme={theme ? darkTheme : lightTheme}> */}
-        <>
-          {/* <GlobalStyles /> */}
-          <ToggleTheme />
-          <Header />
-          <MainBoxInfo >
-            <HeadLine />
-            <Info />
-          </MainBoxInfo>
-          <ProjectCards/>
-          {/* <Footer /> */}
-        </>
-      {/* </ThemeProvider> */}
+    <AppBox>
+      <ThemeProvider theme={isDarkTheme ? darkTheme : lightTheme}>
+      <GlobalStyles />
+        <ToggleButton onClick={()=> setTheme(isDarkTheme => !isDarkTheme)}>toggle</ToggleButton>
+      <Header />
+      <MainBoxInfo >
+        <HeadLine />
+        <Info />
+      </MainBoxInfo>
+      <ProjectCards/>    
+      </ThemeProvider>
     </AppBox>
   );
 }
+
+const AppBox = styled.div`
+  flex-direction: column;
+  display: flex;
+  justify-content: space-between;
+  max-height: 100%;
+  max-width: 100%;
+  text-align: center;
+  font-family: 'Noto Serif JP', serif;
+  font-family: 'Source Sans Pro', sans-serif;
+`
+const MainBoxInfo = styled.div`
+  display: flex;
+  flex-direction: column;
+`
+// const ToggleThemeBox = styled.div`
+// display: flex;
+// width: 5rem;
+// height: 2rem;
+// border-radius: 2rem;
+// border: 1px solid black;
+// margin: 1rem;
+// justify-content:center;
+// align-items: center;
+// `
+const ToggleButton = styled.button`
+width: 5rem;
+background: ${props => props.theme.text};
+color: ${props => props.theme.background};
+`
 
 export default App;

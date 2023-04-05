@@ -1,32 +1,31 @@
 import styled from "styled-components";
 
 const ProjectCards = () => {
-const ProjectCards = styled.div`
+return(
+  <ProjectCardsBox>
+    <Card/>
+    <Card />
+    <Card />
+  </ProjectCardsBox>
+)
+}
+
+const ProjectCardsBox = styled.div`
 width: auto;
-height: 15rem;
 justify-content: center;
 display: flex;
 margin: 1rem auto;
 `
 const Card = styled.div`
-margin: 3rem 1rem;
-height: 100px;
+margin: 1rem;
+height: 200px;
 width: 200px;
-border: 3px solid black;
+border: 2px solid ${props => props.theme.background};
 border-radius: 2rem;
 cursor:pointer;
 
 &:hover{
-  border: 3px solid var(--yellow);
+  border: 2px solid ${props => props.theme.accentColor};
 }
 `
-return(
-  <ProjectCards>
-    <Card/>
-    <Card />
-    <Card />
-  </ProjectCards>
-)
-}
-
 export default ProjectCards;

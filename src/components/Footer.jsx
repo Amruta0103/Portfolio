@@ -1,14 +1,14 @@
 import styled from "styled-components";
 
 const Footer = () => {
-  const Footer = styled.div`
+  return(
+    <FooterBox>This is Footer</FooterBox>
+  )
+}
+const Footerbox = styled.div`
   border: 1px solid black;
   width: 100%
   height: 50px
-  `
-  return(
-    <Footer></Footer>
-  )
-}
+`
 
 export default Footer;
