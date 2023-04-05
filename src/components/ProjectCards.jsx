@@ -20,12 +20,11 @@ const Card = styled.div`
 margin: 1rem;
 height: 200px;
 width: 200px;
-border: 2px solid ${props => props.theme.background};
-border-radius: 2rem;
+border: 2px solid ${props => props.theme.accentColor};
 cursor:pointer;
 
 &:hover{
-  border: 2px solid ${props => props.theme.accentColor};
+  border: 2px solid ${props => props.theme.text};
 }
 `
 export default ProjectCards;

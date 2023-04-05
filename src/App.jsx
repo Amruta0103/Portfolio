@@ -7,6 +7,8 @@ import Header from './components/Header';
 import ProjectCards from './components/ProjectCards';
 import GlobalStyles, { darkTheme, lightTheme } from './theme';
 import { useState } from 'react';
+import sun from "./assets/brightness.svg";
+import moon from "./assets/moon-stars.svg";
 
 function App() {
   const [isDarkTheme, setTheme] = useState(false);
@@ -16,7 +18,9 @@ function App() {
     <AppBox>
       <ThemeProvider theme={isDarkTheme ? darkTheme : lightTheme}>
       <GlobalStyles />
-        <ToggleButton onClick={()=> setTheme(isDarkTheme => !isDarkTheme)}>toggle</ToggleButton>
+        <ToggleButton onClick={()=> setTheme(isDarkTheme => !isDarkTheme)}>
+          <ToggleImage src={isDarkTheme? sun : moon} />
+        </ToggleButton>
       <Header />
       <MainBoxInfo >
         <HeadLine />
@@ -29,6 +33,7 @@ function App() {
 }
 
 const AppBox = styled.div`
+position: relative;
   flex-direction: column;
   display: flex;
   justify-content: space-between;
@@ -42,20 +47,22 @@ const MainBoxInfo = styled.div`
   display: flex;
   flex-direction: column;
 `
-// const ToggleThemeBox = styled.div`
-// display: flex;
-// width: 5rem;
-// height: 2rem;
-// border-radius: 2rem;
-// border: 1px solid black;
-// margin: 1rem;
-// justify-content:center;
-// align-items: center;
-// `
+
 const ToggleButton = styled.button`
-width: 5rem;
+z-index:1;
+position: absolute;
+margin: 0.5rem;
+padding: 0.5rem;
+width: 3rem;
+height: 2rem;
+border: 1px solid transparent;
+border-radius: 2rem;
 background: ${props => props.theme.text};
 color: ${props => props.theme.background};
+`
+const ToggleImage = styled.img`
+height: 15px;
+width: 15px;
 `
 
 export default App;

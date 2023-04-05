@@ -8,9 +8,9 @@ return(
 
 const HeadLineBox = styled.div`
 margin: 1rem;
-font-size: 70px;
+font-size: 60px;
 font-weight: 300;
-color: ${props => props.theme.accentColor}
+color: ${props => props.theme.text}
 `
 
 export default HeadLine

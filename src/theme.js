@@ -8,15 +8,15 @@ const GlobalStyles = createGlobalStyle`
   }
   `
 export const darkTheme = {
-  text: "#c9dbff",
+  text: "#f2f3f4",
   background: "#121212",
-  accentColor:"#9db7ff",
+  accentColor:"#7da8ff",
 }
 
 export const lightTheme =  {
-  accentColor: "#9db7ff",
   text: "#121212",
   background:"#c9dbff",
+  accentColor: "#7da8ff",
 }
 
 export default GlobalStyles;

@@ -55,7 +55,7 @@ const HeaderBox = styled.div`
 
   &:hover{
     background: ${props => props.theme.accentColor};
-    color: ${props =>props.theme.background};
+    color: ${props =>props.theme.text};
   }
   `
   const Logo = styled.img`
