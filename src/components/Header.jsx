@@ -17,8 +17,8 @@ const Header = () => {
         <A target="_blank" href={pdf} download>
           <Options>Resumé <Logo alt={resume} src={resume} /></Options>
         </A>
-        {/* <A target="_blank" href="mailto:amydharap@gmail.com">
-          <Options>Let's Connect  <Logo alt={envelope} src={envelope}/> </Options>
+        {/* <A target="_blank">
+          <Options>Profile <Logo alt="temp"></Logo></Options>
         </A> */}
       </OptionsList>
     </HeaderBox>
@@ -34,6 +34,7 @@ const HeaderBox = styled.div`
   padding: auto;
   margin: 0rem;
   text-align: right;
+  border-bottom: 1px solid ${props => props.theme.text}
   `
   const OptionsList = styled.ul`
   display: flex;
@@ -69,5 +70,14 @@ const HeaderBox = styled.div`
   text-decoration: none;
   color: inherit;
   `
+
+  // const DropDownOption = styled.div`
+  // display: flex;
+  // align-items:center;
+  // padding: 0.5em;
+  // list-style:none;
+  // border-radius: 2rem;
+  // margin: 0.5rem;
+  // `
 
 export default Header;

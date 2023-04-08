@@ -5,6 +5,7 @@ import HeadLine from './components/HeadLine';
 import Info from './components/Info';
 import Header from './components/Header';
 import ProjectCards from './components/ProjectCards';
+import Footer from './components/Footer';
 import GlobalStyles, { darkTheme, lightTheme } from './theme';
 import { useState } from 'react';
 import sun from "./assets/brightness.svg";
@@ -18,15 +19,17 @@ function App() {
     <AppBox>
       <ThemeProvider theme={isDarkTheme ? darkTheme : lightTheme}>
       <GlobalStyles />
-        <ToggleButton onClick={()=> setTheme(isDarkTheme => !isDarkTheme)}>
-          <ToggleImage src={isDarkTheme? sun : moon} />
-        </ToggleButton>
+      {/* <SideBar /> */}
+      <ToggleButton onClick={()=> setTheme(isDarkTheme => !isDarkTheme)}>
+        <ToggleImage src={isDarkTheme? sun : moon} />
+      </ToggleButton>
       <Header />
       <MainBoxInfo >
         <HeadLine />
         <Info />
       </MainBoxInfo>
-      <ProjectCards/>    
+      <ProjectCards/>
+      <Footer />    
       </ThemeProvider>
     </AppBox>
   );
@@ -37,8 +40,8 @@ position: relative;
   flex-direction: column;
   display: flex;
   justify-content: space-between;
-  max-height: 100%;
-  max-width: 100%;
+  min-height: 100vh;
+  min-width: 100%;
   text-align: center;
   font-family: 'Noto Serif JP', serif;
   font-family: 'Source Sans Pro', sans-serif;
