@@ -24,7 +24,7 @@ border: 2px solid ${props => props.theme.accentColor};
 cursor:pointer;
 border-radius: 1rem;
 &:hover{
-  border: 2px solid ${props => props.theme.text};
+  border: 2px solid ${props => props.theme.background};
 }
 `
 export default ProjectCards;
