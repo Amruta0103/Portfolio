@@ -2,7 +2,6 @@
 import styled, { ThemeProvider } from 'styled-components';
 import './App.css';
 import HeadLine from './components/HeadLine';
-import Info from './components/Info';
 import Header from './components/Header';
 import ProjectCards from './components/ProjectCards';
 import Footer from './components/Footer';
@@ -26,7 +25,6 @@ function App() {
       <Header />
       <MainBoxInfo >
         <HeadLine />
-        <Info />
       </MainBoxInfo>
       <ProjectCards/>
       <Footer />    
