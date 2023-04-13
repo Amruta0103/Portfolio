@@ -4,14 +4,14 @@ const Info = () => {
   return(
     <InfoBox>
       <HoverBlock>
-        <InfoText>Hello, I am a web Developer.<br /> I love Coding web-pages that are convinient to use & beautiful to eyes.</InfoText>
+        <InfoText>I love Coding web-pages that are convinient to use & beautiful to eyes.</InfoText>
       </HoverBlock>
     </InfoBox>
   )
 }
 
 const InfoBox = styled.div`
-  font-size: 20px;
+  font-size: 16px;
   margin: 1rem auto;
   font-weight: 300;
   `
@@ -26,3 +26,5 @@ const InfoBox = styled.div`
   `
 
 export default Info;
+
+// I love Coding web-pages that are convinient to use & beautiful to eyes.

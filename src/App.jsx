@@ -11,7 +11,7 @@ import sun from "./assets/brightness.svg";
 import moon from "./assets/moon-stars.svg";
 
 function App() {
-  const [isDarkTheme, setTheme] = useState(false);
+  const [isDarkTheme, setTheme] = useState(true);
   console.log("current theme",isDarkTheme)
   
   return (
