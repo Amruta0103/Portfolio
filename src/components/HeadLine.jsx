@@ -1,5 +1,6 @@
 import styled from "styled-components";
 // import image from "../assets/imgs.jpg";
+// import Info from "./Info";
 
 const HeadLine = () => {
 return(
@@ -7,6 +8,7 @@ return(
     <HeadLineTitleBox>
       <HeadLineTitle>Amruta Dharap</HeadLineTitle>
       <SubTitle>Front-End Web Developer</SubTitle>
+      {/* <Info /> */}
     </HeadLineTitleBox>
     <HeadLineImage alt={"tempimg"}/>
   </HeadLineBox>

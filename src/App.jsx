@@ -52,9 +52,10 @@ const MainBoxInfo = styled.div`
 const ToggleButton = styled.button`
 z-index:1;
 position: absolute;
-margin: 0.5rem;
+right: 1rem;
+margin: 1rem;
 padding: 0.5rem;
-width: 3rem;
+width: 2.5rem;
 height: 2rem;
 border: 1px solid transparent;
 border-radius: 2rem;

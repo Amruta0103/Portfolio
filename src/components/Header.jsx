@@ -40,9 +40,8 @@ const HeaderBox = styled.div`
   display: flex;
   flex-direction: row;
   width: fit-content;
-  margin: auto 0rem auto auto;
+  margin: auto 5rem auto auto;
   padding: 0em;
-  
   `
   const Options = styled.li`
   display:flex;
