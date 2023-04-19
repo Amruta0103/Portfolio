@@ -35,14 +35,14 @@ function App() {
 
 const AppBox = styled.div`
 position: relative;
-  flex-direction: column;
-  display: flex;
-  justify-content: space-between;
-  min-height: 100vh;
-  min-width: 100%;
-  text-align: center;
-  font-family: 'Noto Serif JP', serif;
-  font-family: 'Source Sans Pro', sans-serif;
+flex-direction: column;
+display: flex;
+justify-content: space-between;
+min-height: 100vh;
+min-width: 100%;
+text-align: center;
+font-family: 'Noto Serif JP', serif;
+font-family: 'Source Sans Pro', sans-serif;
 `
 const MainBoxInfo = styled.div`
   display: flex;

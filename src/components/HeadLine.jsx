@@ -1,5 +1,5 @@
 import styled from "styled-components";
-// import image from "../assets/imgs.jpg";
+import image from "../assets/imgs.jpg";
 // import Info from "./Info";
 
 const HeadLine = () => {
@@ -10,7 +10,7 @@ return(
       <SubTitle>Front-End Web Developer</SubTitle>
       {/* <Info /> */}
     </HeadLineTitleBox>
-    <HeadLineImage alt={"tempimg"}/>
+    <HeadLineImage src={image} alt={"tempimg"}/>
   </HeadLineBox>
 )
 }
@@ -20,14 +20,14 @@ display: flex;
 flex-direction: row;
 justify-content: center;
 align-items: center;
-margin: auto 5rem;
+margin: 8rem 5rem;
 `
 const HeadLineImage = styled.img`
-height: 300px;
-width: 300px;
+height: 250px;
+width: 250px;
 margin: 2rem auto;
 border-radius: 4rem;
-border: 1px solid ${props=> props.theme.text}
+border: 1px solid ${props=> props.theme.accentColor}
 `
 const HeadLineTitleBox = styled.div`
 margin: auto;
