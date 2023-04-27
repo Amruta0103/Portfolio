@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 const ProjectCards = () => {
 return(
-  <ProjectCardsBox>
+  <ProjectCardsBox id="projects">
     <Card/>
     <Card />
     <Card />

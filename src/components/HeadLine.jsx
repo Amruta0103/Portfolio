@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import image from "../assets/imgs.jpg";
+import image from "../assets/undraw_dev.svg";
 // import Info from "./Info";
 
 const HeadLine = () => {
@@ -17,17 +17,19 @@ return(
 
 const HeadLineBox = styled.div`
 display: flex;
-flex-direction: row;
 justify-content: center;
 align-items: center;
-margin: 8rem 5rem;
+margin: 8rem 7rem;
 `
 const HeadLineImage = styled.img`
 height: 250px;
 width: 250px;
+padding: 1.5rem;
 margin: 2rem auto;
-border-radius: 4rem;
-border: 1px solid ${props=> props.theme.accentColor}
+border-radius: 9rem;
+border: 1px solid transparent;
+background:${props => props.theme.text};
+
 `
 const HeadLineTitleBox = styled.div`
 margin: auto;

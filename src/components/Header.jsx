@@ -8,6 +8,9 @@ const Header = () => {
   return(
     <HeaderBox>
       <OptionsList>
+      <A href="#projects">
+          <Options>Projects <Logo alt="link"/></Options>
+        </A>
         <A target="_blank" href="https://www.linkedin.com/in/amruta-d-4366341b8/">
           <Options>LinkedIn <Logo alt={linkedin} src={linkedin}/></Options>
         </A>
