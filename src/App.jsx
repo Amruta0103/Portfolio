@@ -5,27 +5,30 @@ import HeadLine from './components/HeadLine';
 import Header from './components/Header';
 import ProjectCards from './components/ProjectCards';
 import Footer from './components/Footer';
+import AboutMe from './components/AboutMe';
 import GlobalStyles, { darkTheme, lightTheme } from './theme';
-import { useState } from 'react';
+import { useTheme } from './context/ThemeProvider';
 import sun from "./assets/brightness.svg";
 import moon from "./assets/moon-stars.svg";
+import { useState } from 'react';
 
 function App() {
-  const [isDarkTheme, setTheme] = useState(true);
-  console.log("current theme",isDarkTheme)
+  const {isDarkTheme, setTheme} = useState();
+  // console.log("current theme",isDarkTheme)
   
   return (
     <AppBox>
-      <ThemeProvider theme={isDarkTheme ? darkTheme : lightTheme}>
-      <GlobalStyles />
-      {/* <SideBar /> */}
+      <ThemeProvider theme={isDarkTheme ? lightTheme : darkTheme}>
+        <GlobalStyles />
       <ToggleButton onClick={()=> setTheme(isDarkTheme => !isDarkTheme)}>
         <ToggleImage src={isDarkTheme? sun : moon} />
       </ToggleButton>
+      {/* <SideBar /> */}
       <Header />
       <MainBoxInfo >
         <HeadLine />
       </MainBoxInfo>
+      <AboutMe />
       <ProjectCards/>
       <Footer />    
       </ThemeProvider>
@@ -38,6 +41,7 @@ position: relative;
 flex-direction: column;
 display: flex;
 justify-content: space-between;
+gap: 5rem;
 min-height: 100vh;
 min-width: 100%;
 text-align: center;
@@ -45,10 +49,9 @@ font-family: 'Noto Serif JP', serif;
 font-family: 'Source Sans Pro', sans-serif;
 `
 const MainBoxInfo = styled.div`
-  display: flex;
-  flex-direction: column;
+display: flex;
+flex-direction: column;
 `
-
 const ToggleButton = styled.button`
 z-index:1;
 position: absolute;

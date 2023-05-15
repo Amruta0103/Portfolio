@@ -7,7 +7,7 @@ return(
   <HeadLineBox>
     <HeadLineTitleBox>
       <HeadLineTitle>Amruta Dharap</HeadLineTitle>
-      <SubTitle>Front-End Web Developer</SubTitle>
+      <SubTitle>Web Developer</SubTitle>
       {/* <Info /> */}
     </HeadLineTitleBox>
     <HeadLineImage src={image} alt={"tempimg"}/>
@@ -19,7 +19,8 @@ const HeadLineBox = styled.div`
 display: flex;
 justify-content: center;
 align-items: center;
-margin: 8rem 7rem;
+margin: 7rem;
+height: 20rem;
 `
 const HeadLineImage = styled.img`
 height: 250px;

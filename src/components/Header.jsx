@@ -3,13 +3,27 @@ import linkedin from "../assets/linkedin.svg";
 import github from "../assets/square-github.svg";
 import resume from "../assets/file-arrow-down-solid.svg";
 import pdf from "../assets/AmrutaDharap.pdf";
+import sun from "../assets/brightness.svg";
+import moon from "../assets/moon-stars.svg";
+import GlobalStyles from '../theme';
+import { useTheme } from "../context/ThemeProvider";
+import { useState } from "react";
 
 const Header = () => {
+  const {isDarkTheme, setTheme} = useState();
+  console.log("current theme",isDarkTheme);
   return(
     <HeaderBox>
+      <GlobalStyles />
       <OptionsList>
-      <A href="#projects">
+        <A href="#aboutme">
+          <Options>About <Logo alt="link"/></Options>
+        </A>
+        <A href="#projects">
           <Options>Projects <Logo alt="link"/></Options>
+        </A>
+        <A href="#">
+          <Options>Connect <Logo alt="link"/></Options>
         </A>
         <A target="_blank" href="https://www.linkedin.com/in/amruta-d-4366341b8/">
           <Options>LinkedIn <Logo alt={linkedin} src={linkedin}/></Options>
@@ -24,12 +38,15 @@ const Header = () => {
           <Options>Profile <Logo alt="temp"></Logo></Options>
         </A> */}
       </OptionsList>
+      <ToggleButton onClick={()=> setTheme(isDarkTheme => !isDarkTheme)}>
+        <ToggleImage src={isDarkTheme? sun : moon} />
+      </ToggleButton>
     </HeaderBox>
   )
 }
 
 const HeaderBox = styled.div`
-  position: relative;
+  position: sticky;
   top: 0rem;
   right: 0rem;
   font-size: 15px;
@@ -82,4 +99,21 @@ const HeaderBox = styled.div`
   // margin: 0.5rem;
   // `
 
+  const ToggleButton = styled.button`
+z-index:1;
+position: absolute;
+right: 1rem;
+margin: 1rem;
+padding: 0.5rem;
+width: 2.5rem;
+height: 2rem;
+border: 1px solid transparent;
+border-radius: 2rem;
+background: ${props => props.theme.text};
+color: ${props => props.theme.background};
+`
+const ToggleImage = styled.img`
+height: 15px;
+width: 15px;
+`
 export default Header;
