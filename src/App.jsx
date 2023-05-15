@@ -13,16 +13,19 @@ import moon from "./assets/moon-stars.svg";
 import { useState } from 'react';
 
 function App() {
-  const {isDarkTheme, setTheme} = useState();
-  // console.log("current theme",isDarkTheme)
+  const [isDarkTheme, setTheme ] = useState(true);
+  // console.log(setTheme(true));
+  console.log(isDarkTheme ? "hello" : "byebye");
   
   return (
     <AppBox>
-      <ThemeProvider theme={isDarkTheme ? lightTheme : darkTheme}>
+      <ThemeProvider theme={isDarkTheme ? darkTheme : lightTheme}>
         <GlobalStyles />
-      <ToggleButton onClick={()=> setTheme(isDarkTheme => !isDarkTheme)}>
-        <ToggleImage src={isDarkTheme? sun : moon} />
-      </ToggleButton>
+        <ToggleButtonBox>
+          <ToggleButton onClick={()=> setTheme(isDarkTheme => !isDarkTheme)}>
+            <ToggleImage src={isDarkTheme? sun : moon} />
+          </ToggleButton>
+        </ToggleButtonBox>
       {/* <SideBar /> */}
       <Header />
       <MainBoxInfo >
@@ -52,18 +55,20 @@ const MainBoxInfo = styled.div`
 display: flex;
 flex-direction: column;
 `
-const ToggleButton = styled.button`
+const ToggleButtonBox = styled.div`
 z-index:1;
 position: absolute;
 right: 1rem;
 margin: 1rem;
 padding: 0.5rem;
+`
+const ToggleButton = styled.button`
+position: sticky;
 width: 2.5rem;
 height: 2rem;
 border: 1px solid transparent;
 border-radius: 2rem;
 background: ${props => props.theme.text};
-color: ${props => props.theme.background};
 `
 const ToggleImage = styled.img`
 height: 15px;
