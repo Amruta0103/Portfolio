@@ -13,7 +13,7 @@ import moon from "./assets/moon-stars.svg";
 import { useState } from 'react';
 
 function App() {
-  const [isDarkTheme, setTheme ] = useState(true);
+  const [isDarkTheme, setTheme ] = useState(false);
   // console.log(setTheme(true));
   console.log(isDarkTheme ? "hello" : "byebye");
   
@@ -44,7 +44,6 @@ position: relative;
 flex-direction: column;
 display: flex;
 justify-content: space-between;
-gap: 5rem;
 min-height: 100vh;
 min-width: 100%;
 text-align: center;

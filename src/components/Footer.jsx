@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 const Footer = () => {
   return(
-    <FooterBox>
+    <FooterBox id="connect">
       <FooterText>
       <a href="mailto:amydharap@gmail.com">Drop Hi! </a>    
       </FooterText>

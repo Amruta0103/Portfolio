@@ -17,6 +17,7 @@ justify-content: center;
 align-items: center;
 height: 20rem;
 width: 100%;
+height: 100vh;
 border: 1px solid black;
 `
 const Msg = styled.div``

@@ -19,8 +19,7 @@ const HeadLineBox = styled.div`
 display: flex;
 justify-content: center;
 align-items: center;
-margin: 7rem;
-height: 20rem;
+height: 100vh;
 `
 const HeadLineImage = styled.img`
 height: 250px;
