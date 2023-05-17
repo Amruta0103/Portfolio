@@ -12,9 +12,10 @@ return(
 
 const ProjectCardsBox = styled.div`
 width: auto;
+height: 100vh;
 justify-content: center;
+align-items: center;
 display: flex;
-margin: 1rem auto;
 `
 const Card = styled.div`
 margin: 1rem;
