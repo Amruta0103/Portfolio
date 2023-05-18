@@ -40,7 +40,7 @@ const Header = () => {
 const HeaderBoxMain = styled.div`
   position: fixed;
   width: 100%;
-  background: rgba(142, 122, 155, 0.5);
+  background: rgba(142, 122, 155, 0.7);
 `
 const HeaderBox = styled.div`
   position: sticky;
