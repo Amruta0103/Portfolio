@@ -1,6 +1,5 @@
 import styled from "styled-components";
 import image from "../assets/undraw_dev.svg";
-// import Info from "./Info";
 
 const HeadLine = () => {
 return(
@@ -8,7 +7,6 @@ return(
     <HeadLineTitleBox>
       <HeadLineTitle>Amruta Dharap</HeadLineTitle>
       <SubTitle>Web Developer</SubTitle>
-      {/* <Info /> */}
     </HeadLineTitleBox>
     <HeadLineImage src={image} alt={"tempimg"}/>
   </HeadLineBox>
@@ -25,14 +23,14 @@ const HeadLineImage = styled.img`
 height: 250px;
 width: 250px;
 padding: 1.5rem;
-margin: 2rem auto;
+margin: auto auto auto 2rem;
 border-radius: 9rem;
 border: 1px solid transparent;
 background:${props => props.theme.text};
 
 `
 const HeadLineTitleBox = styled.div`
-margin: auto;
+margin: auto 2rem auto auto;
 `
 const HeadLineTitle = styled.div`
 margin: auto;

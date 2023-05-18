@@ -7,14 +7,12 @@ import ProjectCards from './components/ProjectCards';
 import Footer from './components/Footer';
 import AboutMe from './components/AboutMe';
 import GlobalStyles, { darkTheme, lightTheme } from './theme';
-import { useTheme } from './context/ThemeProvider';
 import sun from "./assets/brightness.svg";
 import moon from "./assets/moon-stars.svg";
 import { useState } from 'react';
 
 function App() {
   const [isDarkTheme, setTheme ] = useState(false);
-  // console.log(setTheme(true));
   console.log(isDarkTheme ? "hello" : "byebye");
   
   return (
@@ -55,11 +53,10 @@ display: flex;
 flex-direction: column;
 `
 const ToggleButtonBox = styled.div`
+position:fixed;
 z-index:1;
-position: absolute;
-right: 1rem;
-margin: 1rem;
-padding: 0.5rem;
+right: 2rem;
+top: 1rem;
 `
 const ToggleButton = styled.button`
 position: sticky;

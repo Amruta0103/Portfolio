@@ -3,15 +3,8 @@ import linkedin from "../assets/linkedin.svg";
 import github from "../assets/square-github.svg";
 import resume from "../assets/file-arrow-down-solid.svg";
 import pdf from "../assets/AmrutaDharap.pdf";
-// import sun from "../assets/brightness.svg";
-// import moon from "../assets/moon-stars.svg";
-// import GlobalStyles from '../theme';
-// import { useTheme } from "../context/ThemeProvider";
-// import { useState } from "react";
 
 const Header = () => {
-  // const {isDarkTheme, setTheme} = useState();
-  // console.log("current theme",isDarkTheme);
   return(
     <HeaderBoxMain>
       <HeaderBox>
@@ -39,9 +32,6 @@ const Header = () => {
             <Options>Profile <Logo alt="temp"></Logo></Options>
           </A> */}
         </OptionsList>
-        {/* <ToggleButton onClick={()=> setTheme(isDarkTheme => !isDarkTheme)}>
-          <ToggleImage src={isDarkTheme? sun : moon} />
-        </ToggleButton> */}
       </HeaderBox>
     </HeaderBoxMain>
   )
