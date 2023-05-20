@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import ticTac from "../assets/tictactimeImg.png";
 import link from "../assets/link-alt.svg";
-import Footer from "./Footer";
+
 const ProjectCards = () => {
 return(
   <ProjectCardsBox id="projects">
@@ -18,7 +18,6 @@ return(
         </CardBack>
       </FlipCard>
     </FlipCardBox>
-    <Footer />
   </ProjectCardsBox>
 )
 }

@@ -4,7 +4,7 @@ import './App.css';
 import HeadLine from './components/HeadLine';
 import Header from './components/Header';
 import ProjectCards from './components/ProjectCards';
-// import Footer from './components/Footer';
+import Footer from './components/Footer';
 import AboutMe from './components/AboutMe';
 // import ConnectLinks from './components/ConnectLinks';
 import GlobalStyles, { darkTheme, lightTheme } from './theme';
@@ -32,7 +32,7 @@ function App() {
       <AboutMe />
       <ProjectCards/>
       {/* <ConnectLinks /> */}
-      {/* <Footer />     */}
+      <Footer />    
       </ThemeProvider>
     </AppBox>
   );
@@ -55,7 +55,10 @@ display: flex;
 flex-direction: column;
 `
 const ToggleButtonBox = styled.div`
-position:fixed;
+display: flex;
+justify-content: center;
+align-items:center;
+position: fixed;
 z-index:1;
 right: 2rem;
 top: 1rem;
