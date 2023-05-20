@@ -13,11 +13,11 @@ const Footer = () => {
 const FooterBox = styled.div`
 display: flex;
 color: ${props=>props.theme.text};
-height: 50px;
-width: inherit;
-position: relative;
-bottom: 0;
-left: 0;
+height: 4rem;
+width: 100%;
+position: absolute;
+bottom:0;
+right: 0;
 `
 const FooterText = styled.div`
 text-align: center;

@@ -4,11 +4,12 @@ import './App.css';
 import HeadLine from './components/HeadLine';
 import Header from './components/Header';
 import ProjectCards from './components/ProjectCards';
-import Footer from './components/Footer';
+// import Footer from './components/Footer';
 import AboutMe from './components/AboutMe';
+// import ConnectLinks from './components/ConnectLinks';
 import GlobalStyles, { darkTheme, lightTheme } from './theme';
 import sun from "./assets/brightness.svg";
-import moon from "./assets/moon-stars.svg";
+import moon from "./assets/moon.svg";
 import { useState } from 'react';
 
 function App() {
@@ -21,17 +22,17 @@ function App() {
         <GlobalStyles />
         <ToggleButtonBox>
           <ToggleButton onClick={()=> setTheme(isDarkTheme => !isDarkTheme)}>
-            <ToggleImage src={isDarkTheme? sun : moon} />
+            <ToggleImage src={isDarkTheme? moon : sun} />
           </ToggleButton>
         </ToggleButtonBox>
-      {/* <SideBar /> */}
       <Header />
       <MainBoxInfo >
         <HeadLine />
       </MainBoxInfo>
       <AboutMe />
       <ProjectCards/>
-      <Footer />    
+      {/* <ConnectLinks /> */}
+      {/* <Footer />     */}
       </ThemeProvider>
     </AppBox>
   );
@@ -42,6 +43,7 @@ position: relative;
 flex-direction: column;
 display: flex;
 justify-content: space-between;
+gap: 3rem;
 min-height: 100vh;
 min-width: 100%;
 text-align: center;
@@ -62,13 +64,13 @@ const ToggleButton = styled.button`
 position: sticky;
 width: 2.5rem;
 height: 2rem;
-border: 1px solid transparent;
+border: 1.5px solid transparent;
 border-radius: 2rem;
-background: ${props => props.theme.text};
+background: transparent;
 `
 const ToggleImage = styled.img`
-height: 15px;
-width: 15px;
+height: 23px;
+width: 23px;
 `
 
 export default App;

@@ -1,8 +1,11 @@
 import styled from "styled-components";
-import linkedin from "../assets/linkedin.svg";
-import github from "../assets/square-github.svg";
-import resume from "../assets/file-arrow-down-solid.svg";
-import pdf from "../assets/AmrutaDharap.pdf";
+// import linkedin from "../assets/linkedin.svg";
+// import github from "../assets/square-github.svg";
+// import resume from "../assets/file-arrow-down-solid.svg";
+// import pdf from "../assets/AmrutaDharap.pdf";
+import projects from "../assets/diagram-project.svg";
+// import at from "../assets/at.svg";
+import profile from "../assets/user-solid.svg";
 
 const Header = () => {
   return(
@@ -10,16 +13,16 @@ const Header = () => {
       <HeaderBox>
         {/* <GlobalStyles /> */}
         <OptionsList>
-          <A href="#aboutme">
-            <Options>About <Logo alt="link"/></Options>
-          </A>
           <A href="#projects">
-            <Options>Projects <Logo alt="link"/></Options>
+            <Options>Projects <Logo alt="projects" src={projects}/></Options>
           </A>
-          <A href="#connect">
-            <Options>Connect <Logo alt="link"/></Options>
+          <A href="#aboutme">
+            <Options>About <Logo alt="about" src={profile}/></Options>
           </A>
-          <A target="_blank" href="https://www.linkedin.com/in/amruta-d-4366341b8/">
+          {/* <A href="#connect">
+            <Options>Connect <Logo alt="connect" src={at}/></Options>
+          </A> */}
+          {/* <A target="_blank" href="https://www.linkedin.com/in/amruta-d-4366341b8/">
             <Options>LinkedIn <Logo alt={linkedin} src={linkedin}/></Options>
           </A>
           <A target="_blank" href="https://github.com/Amruta0103">
@@ -27,7 +30,7 @@ const Header = () => {
           </A>
           <A target="_blank" href={pdf} download>
             <Options>Resumé <Logo alt={resume} src={resume} /></Options>
-          </A>
+          </A> */}
           {/* <A target="_blank">
             <Options>Profile <Logo alt="temp"></Logo></Options>
           </A> */}
@@ -40,7 +43,9 @@ const Header = () => {
 const HeaderBoxMain = styled.div`
   position: fixed;
   width: 100%;
-  background: rgba(142, 122, 155, 0.7);
+  height: 4rem;
+  background: rgba(142, 122, 155, 0.8);
+  box-shadow: 0px 1px 10px 0.5px;
 `
 const HeaderBox = styled.div`
   position: sticky;

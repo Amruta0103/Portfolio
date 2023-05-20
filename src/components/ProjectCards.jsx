@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import ticTac from "../assets/tictactimeImg.png";
 import link from "../assets/link-alt.svg";
-
+import Footer from "./Footer";
 const ProjectCards = () => {
 return(
   <ProjectCardsBox id="projects">
@@ -18,6 +18,7 @@ return(
         </CardBack>
       </FlipCard>
     </FlipCardBox>
+    <Footer />
   </ProjectCardsBox>
 )
 }
@@ -43,7 +44,7 @@ transform: rotateY(180deg);
 `
 const CardFront = styled.div`
 position: absolute;
-border: 2px solid ${props => props.theme.accentColor};
+border: 2px solid transparent;
 cursor:pointer;
 border-radius: 1rem;
 height:100%;
@@ -67,10 +68,11 @@ backface-visibility: hidden;
 `
 const ProjectCardsBox = styled.div`
 width: auto;
-height: 100vh;
+height: auto;
 justify-content: center;
 align-items: center;
 display: flex;
+margin: 3rem auto 7rem;
 `
 const CardImg = styled.img`
 height: 200px;
