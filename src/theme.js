@@ -9,7 +9,7 @@ const GlobalStyles = createGlobalStyle`
   `
 export const darkTheme = {
   text: "#f2f3f4",
-  background: "#121212",
+  background: "#2d2d30",
   accentColor:"rgb(142, 122, 155)",
 }
 

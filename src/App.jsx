@@ -29,8 +29,8 @@ function App() {
       <MainBoxInfo >
         <HeadLine />
       </MainBoxInfo>
-      <AboutMe />
       <ProjectCards/>
+      <AboutMe />
       {/* <ConnectLinks /> */}
       <Footer />    
       </ThemeProvider>
@@ -59,7 +59,7 @@ display: flex;
 justify-content: center;
 align-items:center;
 position: fixed;
-z-index:1;
+z-index:2;
 right: 2rem;
 top: 1rem;
 `

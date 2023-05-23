@@ -5,17 +5,15 @@ const AboutMe = () => {
     <AboutMeBox id="aboutme">
       <Msg>
         <MsgTitle>Hello!!</MsgTitle>
-        I am Amruta, an aspiring Web Developer.<br/>
-        I like creating web elements, that are efficient and simple to use.
+        I am Amruta,<br/> a Front-End Developer.<br/>
+        I like creating web elements, that are efficient and easy to use.
         <StackTitle>My Tech Stack</StackTitle>
       </Msg>
-      
     </AboutMeBox>
   )
 }
 
 const AboutMeBox = styled.div`
-margin: auto;
 display: flex;
 justify-content: space-evenly;
 align-items: center;
@@ -25,9 +23,9 @@ margin: 3rem auto;
 `
 const Msg = styled.div`
 text-align: center;
-width: 30%;
-border: 2px solid ${props => props.theme.accentColor};
-border-radius: 4rem;
+padding: 1rem;
+background: ${props => props.theme.accentColor};
+border-radius: 2rem ;
 `
 const MsgTitle = styled.div`
 font-size: 2rem;

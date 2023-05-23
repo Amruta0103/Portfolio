@@ -5,8 +5,6 @@ import link from "../assets/link-alt.svg";
 const ProjectCards = () => {
 return(
   <ProjectCardsBox id="projects">
-    {/* <Card/> */}
-    {/* <Card /> */}
     <FlipCardBox>
       <FlipCard>
         <CardFront>
@@ -23,7 +21,7 @@ return(
 }
 
 const FlipCard = styled.div`
-position: relative;
+position: arelative;
 width:100%;
 height:100%;
 border-radius: 1rem;
@@ -33,9 +31,11 @@ transform-style: preserve-3d;
 box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 `
 const FlipCardBox = styled.div`
+position: relative;
 height: 200px;
 width:350px;
 border-radius: 1rem;
+z-index: 0;
 perspective: 1000px;
 &:hover ${FlipCard}{
 transform: rotateY(180deg);

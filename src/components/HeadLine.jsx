@@ -11,7 +11,7 @@ return(
   <HeadLineBox>
     <HeadLineTitleBox>
       <HeadLineTitle>Amruta Dharap</HeadLineTitle>
-      <SubTitle>Web Developer</SubTitle>
+      <SubTitle>Front-End Developer</SubTitle>
       <MyStack>
         <Logo alt="css" src={css} />
         <Logo alt="html" src={html} />
@@ -60,7 +60,7 @@ align-items: center;
 justify-content: space-evenly;
 margin: 1rem auto;
 border: 2px solid ${props => props.theme.accentColor};
-border-radius: 4rem;
+border-radius: 1rem;
 background: ${props => props.theme.accentColor};
 `
 const Logo = styled.img`

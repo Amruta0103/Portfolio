@@ -23,15 +23,13 @@ const Header = () => {
 
 const HeaderBoxMain = styled.div`
   position: fixed;
+  z-index:1;
   width: 100%;
   height: 4rem;
   background: rgb(142, 122, 155);
   box-shadow: 0px 1px 10px 0.5px;
 `
 const HeaderBox = styled.div`
-  position: sticky;
-  top: 0rem;
-  right: 0rem;
   font-size: 15px;
   width: inherit;
   padding: auto;
