@@ -10,13 +10,13 @@ const GlobalStyles = createGlobalStyle`
 export const darkTheme = {
   text: "#f2f3f4",
   background: "#2d2d30",
-  accentColor:"#8e7b9b",
+  accentColor:"#9a8aa6",
 }
 
 export const lightTheme =  {
   text: "#121212",
-  background:"#fff4dd",
-  accentColor:"#8e7b9b",
+  background:"#fff6e3",
+  accentColor:"#9a8aa6",
 }
 
 export default GlobalStyles;

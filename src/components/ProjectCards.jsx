@@ -67,7 +67,7 @@ backface-visibility: hidden;
 `
 const ProjectCardsBox = styled.div`
 width: auto;
-height: auto;
+height: 100vh;
 justify-content: center;
 align-items: center;
 display: flex;
