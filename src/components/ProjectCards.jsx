@@ -21,14 +21,13 @@ return(
 }
 
 const FlipCard = styled.div`
-position: arelative;
+position: relative;
 width:100%;
 height:100%;
 border-radius: 1rem;
 text-align: center;
 transition: transform 0.6s;
 transform-style: preserve-3d;
-box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 `
 const FlipCardBox = styled.div`
 position: relative;
@@ -77,6 +76,7 @@ const CardImg = styled.img`
 height: 200px;
 width: 350px;
 border-radius: 1rem;
+box-shadow: 0 2px 7px 0 ${props => props.theme.text};
 `
 const ProjectLinks = styled.a`
 display: flex;

@@ -4,7 +4,7 @@ import './App.css';
 import HeadLine from './components/HeadLine';
 import Header from './components/Header';
 import ProjectCards from './components/ProjectCards';
-import Footer from './components/Footer';
+// import Footer from './components/Footer';
 import AboutMe from './components/AboutMe';
 // import ConnectLinks from './components/ConnectLinks';
 import GlobalStyles, { darkTheme, lightTheme } from './theme';
@@ -30,9 +30,7 @@ function App() {
         <HeadLine />
       </MainBoxInfo>
       <ProjectCards/>
-      <AboutMe />
-      {/* <ConnectLinks /> */}
-      <Footer />    
+      <AboutMe />   
       </ThemeProvider>
     </AppBox>
   );
