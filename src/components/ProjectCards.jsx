@@ -1,25 +1,38 @@
 import styled from "styled-components";
-import ticTac from "../assets/tictactimeImg.png";
+// import ticTac from "../assets/tictactimeImg.png";
 import link from "../assets/link-alt.svg";
+import projectList from "../data/data";
 
 const ProjectCards = () => {
 return(
   <ProjectCardsBox id="projects">
-    <FlipCardBox>
-      <FlipCard>
-        <CardFront>
-          <CardImg src={ticTac}/>
-        </CardFront>
-        <CardBack>
-          <ProjectLinks target="_blank" href="https://tictactime.netlify.app/">Live Project Link <Logo alt={"link"} src={link}/> </ProjectLinks>
-          <ProjectLinks target="_blank" href="https://github.com/Amruta0103/tictactime">GitHub Link <Logo alt={"link"} src={link}/> </ProjectLinks>
-        </CardBack>
-      </FlipCard>
-    </FlipCardBox>
+    {projectList.map((i)=>{
+      return(
+      <FlipCardBox>
+        <FlipCard>
+          <CardFront>
+            <CardImg src={i.image}/>
+          </CardFront>
+          <CardBack>
+            <ProjectLinks target="_blank" href={i.liveLink}>Live Project Link <Logo alt={"link"} src={link}/> </ProjectLinks>
+            <ProjectLinks target="_blank" href={i.gitLink}>GitHub Link <Logo alt={"link"} src={link}/> </ProjectLinks>
+          </CardBack>
+        </FlipCard>
+      </FlipCardBox>
+      )
+    })}
   </ProjectCardsBox>
 )
 }
 
+const ProjectCardsBox = styled.div`
+width: auto;
+height: 100%;
+justify-content: center;
+align-items: center;
+display: flex;
+margin: 3rem auto 7rem;
+`
 const FlipCard = styled.div`
 position: relative;
 width:100%;
@@ -32,10 +45,11 @@ transform-style: preserve-3d;
 const FlipCardBox = styled.div`
 position: relative;
 height: 200px;
-width:350px;
+width: 300px;
 border-radius: 1rem;
 z-index: 0;
 perspective: 1000px;
+margin: 0 2rem;
 &:hover ${FlipCard}{
 transform: rotateY(180deg);
 }
@@ -64,17 +78,9 @@ background-color: ${props => props.theme.accentColor};
 transform: rotateY(180deg);
 backface-visibility: hidden;
 `
-const ProjectCardsBox = styled.div`
-width: auto;
-height: 100vh;
-justify-content: center;
-align-items: center;
-display: flex;
-margin: 3rem auto 7rem;
-`
 const CardImg = styled.img`
 height: 200px;
-width: 350px;
+width: 300px;
 border-radius: 1rem;
 box-shadow: 0 2px 7px 0 ${props => props.theme.text};
 `

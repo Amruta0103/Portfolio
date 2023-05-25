@@ -13,7 +13,7 @@ import moon from "./assets/moon.svg";
 import { useState } from 'react';
 
 function App() {
-  const [isDarkTheme, setTheme ] = useState(false);
+  const [isDarkTheme, setTheme ] = useState(true);
   console.log(isDarkTheme ? "hello" : "byebye");
   
   return (
