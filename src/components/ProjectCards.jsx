@@ -5,33 +5,44 @@ import projectList from "../data/data";
 
 const ProjectCards = () => {
 return(
-  <ProjectCardsBox id="projects">
-    {projectList.map((i)=>{
-      return(
-      <FlipCardBox>
-        <FlipCard>
-          <CardFront>
-            <CardImg src={i.image}/>
-          </CardFront>
-          <CardBack>
-            <ProjectLinks target="_blank" href={i.liveLink}>Live Project Link <Logo alt={"link"} src={link}/> </ProjectLinks>
-            <ProjectLinks target="_blank" href={i.gitLink}>GitHub Link <Logo alt={"link"} src={link}/> </ProjectLinks>
-          </CardBack>
-        </FlipCard>
-      </FlipCardBox>
-      )
-    })}
-  </ProjectCardsBox>
+  <Projects id="projects">
+    <ProjectsTitle>Projects</ProjectsTitle>
+    <ProjectCardsBox>
+      {projectList.map((i)=>{
+        return(
+        <FlipCardBox>
+          <FlipCard>
+            <CardFront>
+              <CardImg src={i.image}/>
+            </CardFront>
+            <CardBack>
+              <ProjectLinks target="_blank" href={i.liveLink}>Live Project Link <Logo alt={"link"} src={link}/> </ProjectLinks>
+              <ProjectLinks target="_blank" href={i.gitLink}>GitHub Link <Logo alt={"link"} src={link}/> </ProjectLinks>
+            </CardBack>
+          </FlipCard>
+        </FlipCardBox>
+        )
+      })}
+    </ProjectCardsBox>
+  </Projects>
 )
 }
 
-const ProjectCardsBox = styled.div`
+const Projects = styled.div`
 width: auto;
 height: 100%;
 justify-content: center;
 align-items: center;
 display: flex;
+flex-direction: column;
 margin: 3rem auto 7rem;
+`
+const ProjectsTitle = styled.div`
+`
+const ProjectCardsBox = styled.div`
+justify-content: center;
+align-items: center;
+display: flex;
 `
 const FlipCard = styled.div`
 position: relative;

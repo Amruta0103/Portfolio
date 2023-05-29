@@ -5,6 +5,7 @@ import html from "../assets/icons8-html.svg"
 import js from "../assets/icons8-javascript.svg";
 import react from "../assets/icons8-react.svg";
 import nodejs from "../assets/icons8-nodejs.svg";
+import mongo from "../assets/mongodb.svg";
 
 const HeadLine = () => {
 return(
@@ -18,6 +19,7 @@ return(
         <Logo alt="js" src={js} />
         <Logo alt="react" src={react} />
         <Logo alt="nodejs" src={nodejs} />
+        <Logo alt="mongo" src={mongo}/>
       </MyStack>
     </HeadLineTitleBox>
     <HeadLineImage src={image} alt={"tempimg"}/>
