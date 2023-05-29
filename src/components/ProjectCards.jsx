@@ -30,14 +30,17 @@ return(
 
 const Projects = styled.div`
 width: auto;
-height: 100%;
-justify-content: center;
+max-height: 100vh;
+justify-content: space-between;
 align-items: center;
 display: flex;
 flex-direction: column;
 margin: 3rem auto 7rem;
 `
 const ProjectsTitle = styled.div`
+font-size: 40px;
+font-weight: 400;
+margin: 2rem auto;
 `
 const ProjectCardsBox = styled.div`
 justify-content: center;

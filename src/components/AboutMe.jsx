@@ -16,7 +16,7 @@ const AboutMe = () => {
         </Msg>
       </AboutMeSub>
       <LinksBlock>
-          <div>Let's connect to find more ways to make "Web" an awesome experience for users!</div>
+          <LinksBlockLine>Let's connect to find more ways to make "Web" an awesome experience for users!</LinksBlockLine>
           <Links>
           <A target="_blank" href="mailto:amydharap@gmail.com">
             <Logo alt="mail" src={mail}/>
@@ -51,7 +51,8 @@ const AboutMeSub = styled.div`
 margin: 7rem auto;
 `
 const Msg = styled.div`
-width: 50%;
+width: 60%;
+font-weight: 300;
 text-align: center;
 padding: 1rem;
 margin: auto;
@@ -60,8 +61,12 @@ box-shadow: 0 2px 7px 0 ${props => props.theme.text};
 `
 const LinksBlock = styled.div`
 margin: 2rem auto;
-font-size: 18px;
+font-size: 20px;
 font-weight: 300;
+`
+const LinksBlockLine = styled.div`
+font-weight: 300;
+font-size: 20px;
 `
 const Links = styled.div`
 display: flex;

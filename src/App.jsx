@@ -41,12 +41,11 @@ position: relative;
 flex-direction: column;
 display: flex;
 justify-content: space-between;
-gap: 3rem;
+gap: 4rem;
 min-height: 100vh;
 min-width: 100%;
 text-align: center;
-font-family: 'Noto Serif JP', serif;
-font-family: 'Source Sans Pro', sans-serif;
+font-family: 'Josefin Sans', sans-serif;
 `
 const MainBoxInfo = styled.div`
 display: flex;
