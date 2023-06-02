@@ -30,9 +30,9 @@ const HeaderBoxMain = styled.div`
   box-shadow: 0px 1px 10px 0.5px;
 `
 const HeaderBox = styled.div`
-  font-size: 15px;
+  font-size: 16px;
+  font-weight: 300;
   width: inherit;
-  padding: auto;
   margin: 0rem;
   text-align: right;
 `
@@ -70,30 +70,4 @@ const A = styled.a`
   color: inherit;
 `
 
-  // const DropDownOption = styled.div`
-  // display: flex;
-  // align-items:center;
-  // padding: 0.5em;
-  // list-style:none;
-  // border-radius: 2rem;
-  // margin: 0.5rem;
-  // `
-
-//   const ToggleButton = styled.button`
-//   z-index:1;
-//   position: absolute;
-//   right: 1rem;
-//   margin: 1rem;
-//   padding: 0.5rem;
-//   width: 2.5rem;
-//   height: 2rem;
-//   border: 1px solid transparent;
-//   border-radius: 2rem;
-//   background: ${props => props.theme.text};
-//   color: ${props => props.theme.background};
-// `
-// const ToggleImage = styled.img`
-//   height: 15px;
-//   width: 15px;
-// `
 export default Header;

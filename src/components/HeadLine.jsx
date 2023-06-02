@@ -49,8 +49,8 @@ margin: auto 2rem auto auto;
 const HeadLineTitle = styled.div`
 margin: auto;
 font-size: 60px;
-font-weight: 300;
-color: ${props => props.theme.text}
+color: ${props => props.theme.text};
+font-family: 'Familjen Grotesk', sans-serif;
 `
 const SubTitle = styled.div`
 font-size: 20px;

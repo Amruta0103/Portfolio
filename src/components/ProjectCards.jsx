@@ -36,11 +36,13 @@ align-items: center;
 display: flex;
 flex-direction: column;
 margin: 3rem auto 7rem;
+padding: 1rem;
 `
 const ProjectsTitle = styled.div`
 font-size: 40px;
 font-weight: 400;
-margin: 2rem auto;
+margin: 5rem auto;
+font-family: 'Familjen Grotesk', sans-serif;
 `
 const ProjectCardsBox = styled.div`
 justify-content: center;
@@ -103,9 +105,7 @@ display: flex;
 align-items: center;
 color: white;
 font-size: 20px;
-text-decoration: underline;
-text-decoration-color: white;
-text-decoration-thickness: 1px;
+text-decoration: none;
 cursor:pointer;
 margin: 1rem auto;
 `

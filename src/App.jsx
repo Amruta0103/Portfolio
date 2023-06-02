@@ -11,6 +11,7 @@ import GlobalStyles, { darkTheme, lightTheme } from './theme';
 import sun from "./assets/brightness.svg";
 import moon from "./assets/moon.svg";
 import { useState } from 'react';
+import Footer from './components/Footer';
 
 function App() {
   const [isDarkTheme, setTheme ] = useState(true);
@@ -30,7 +31,8 @@ function App() {
         <HeadLine />
       </MainBoxInfo>
       <ProjectCards/>
-      <AboutMe />   
+      <AboutMe /> 
+      <Footer />  
       </ThemeProvider>
     </AppBox>
   );
