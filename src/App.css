@@ -3,6 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Familjen+Grotesk&display=swap');
 body {
   font-family: 'Josefin Sans', sans-serif;
+  width: auto;
 }
 body::-webkit-scrollbar{
   display: none;

@@ -45,9 +45,13 @@ display: flex;
 justify-content: space-between;
 gap: 4rem;
 min-height: 100vh;
-min-width: 100%;
+width: 100%;
 text-align: center;
 font-family: 'Josefin Sans', sans-serif;
+@media (max-width: 768px){
+  width: auto;
+  overflow: hidden;
+}
 `
 const MainBoxInfo = styled.div`
 display: flex;

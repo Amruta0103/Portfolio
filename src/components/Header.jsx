@@ -10,10 +10,10 @@ const Header = () => {
         {/* <GlobalStyles /> */}
         <OptionsList>
           <A href="#projects">
-            <Options>Projects <Logo alt="projects" src={projects}/></Options>
+            <Options><OptionTitle>Projects</OptionTitle> <Logo alt="projects" src={projects}/></Options>
           </A>
           <A href="#aboutme">
-            <Options>About <Logo alt="about" src={profile}/></Options>
+            <Options><OptionTitle>About</OptionTitle> <Logo alt="about" src={profile}/></Options>
           </A>
         </OptionsList>
       </HeaderBox>
@@ -58,11 +58,22 @@ const Options = styled.li`
     color: ${props =>props.theme.text};
   }
 `
+const OptionTitle = styled.div`
+  @media (max-width: 400px) {
+    transition: display 3s;
+    display: none;
+  }
+`
 const Logo = styled.img`
   height: 15px;
   width: 15px;
   border: 2px solid transparent;
   margin: 5px;
+  @media (max-width: 400px) {
+    transition: width 1s, height 1s;
+    height: 20px;
+    width: 20px;
+  }
 `
 const A = styled.a`
   font-size inherit;
