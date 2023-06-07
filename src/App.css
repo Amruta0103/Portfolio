@@ -4,6 +4,20 @@
 body {
   font-family: 'Josefin Sans', sans-serif;
   width: auto;
+  height:100vh;
+  background-image: linear-gradient(
+  130deg,
+  hsl(279deg 40% 74%) 0%,
+  hsl(302deg 38% 73%) 11%,
+  hsl(321deg 54% 75%) 22%,
+  hsl(334deg 70% 78%) 33%,
+  hsl(344deg 85% 80%) 44%,
+  hsl(353deg 98% 81%) 56%,
+  hsl(3deg 100% 81%) 67%,
+  hsl(11deg 100% 79%) 78%,
+  hsl(19deg 100% 77%) 89%,
+  hsl(25deg 95% 75%) 100%
+);
 }
 body::-webkit-scrollbar{
   display: none;
