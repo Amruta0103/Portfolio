@@ -5,7 +5,7 @@ body {
   font-family: 'Josefin Sans', sans-serif;
   width: auto;
   height:100vh;
-  background-image: linear-gradient(
+  background: linear-gradient(
   130deg,
   hsl(279deg 40% 74%) 0%,
   hsl(302deg 38% 73%) 11%,
