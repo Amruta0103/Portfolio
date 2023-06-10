@@ -29,6 +29,7 @@ return(
 
 const HeadLineBox = styled.div`
 display: flex;
+flex-wrap: wrap;
 justify-content: center;
 align-items: center;
 height: 100%;
@@ -37,14 +38,14 @@ const HeadLineImage = styled.img`
 height: 250px;
 width: 250px;
 padding: 1.5rem;
-margin: auto auto auto 2rem;
+margin: auto;
 border-radius: 9rem;
 border: 1px solid transparent;
-background:${props => props.theme.text};
+background: ${props => props.theme.backdrop};
 
 `
 const HeadLineTitleBox = styled.div`
-margin: auto 2rem auto auto;
+margin: auto;
 `
 const HeadLineTitle = styled.div`
 margin: auto;

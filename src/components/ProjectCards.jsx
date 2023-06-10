@@ -29,25 +29,21 @@ return(
 }
 
 const Projects = styled.div`
-width: auto;
-max-height: 100vh;
-justify-content: space-between;
-align-items: center;
-display: flex;
-flex-direction: column;
-margin: 3rem auto 7rem;
+width: inherit;
+margin: auto;
 padding: 1rem;
 `
 const ProjectsTitle = styled.div`
 font-size: 40px;
 font-weight: 400;
-margin: 5rem auto;
+margin: 3rem auto;
 font-family: 'Familjen Grotesk', sans-serif;
 `
 const ProjectCardsBox = styled.div`
 justify-content: center;
 align-items: center;
 display: flex;
+flex-wrap: wrap;
 `
 const FlipCard = styled.div`
 position: relative;
@@ -65,7 +61,7 @@ width: 300px;
 border-radius: 1rem;
 z-index: 0;
 perspective: 1000px;
-margin: 0 2rem;
+margin: 2rem;
 &:hover ${FlipCard}{
 transform: rotateY(180deg);
 }
@@ -98,7 +94,7 @@ const CardImg = styled.img`
 height: 200px;
 width: 300px;
 border-radius: 1rem;
-box-shadow: 0 2px 7px 0 ${props => props.theme.text};
+box-shadow: 0 1px 5px 0 ${props => props.theme.text};
 `
 const ProjectLinks = styled.a`
 display: flex;

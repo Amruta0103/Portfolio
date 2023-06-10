@@ -1,11 +1,11 @@
 // import logo from './logo.svg';
 import styled, {ThemeProvider} from 'styled-components';
 import './App.css';
-// import HeadLine from './components/HeadLine';
+import HeadLine from './components/HeadLine';
 // import Header from './components/Header';
-// import ProjectCards from './components/ProjectCards';
+import ProjectCards from './components/ProjectCards';
 // import Footer from './components/Footer';
-// import AboutMe from './components/AboutMe';
+import AboutMe from './components/AboutMe';
 // import ConnectLinks from './components/ConnectLinks';
 import GlobalStyles, { darkTheme, lightTheme } from './theme';
 import sun from "./assets/brightness.svg";
@@ -18,8 +18,7 @@ function App() {
   console.log(isDarkTheme ? "hello" : "byebye");
   
   return (
-    <AppBox>
-      <AppBg><h1>Helloww</h1></AppBg>
+    <AppBg>
       <ThemeProvider theme={isDarkTheme ? darkTheme : lightTheme}>
         <GlobalStyles />
         <ToggleButtonBox>
@@ -27,43 +26,58 @@ function App() {
             <ToggleImage src={isDarkTheme? moon : sun} />
           </ToggleButton>
         </ToggleButtonBox>
-      {/* <Header /> */}
-      {/* <MainBoxInfo > */}
-        {/* <HeadLine /> */}
-      {/* </MainBoxInfo> */}
-      {/* <ProjectCards/> */}
-      {/* <AboutMe />  */}
-      {/* <Footer />   */}
+        <AppBox>
+          {/* <Header /> */}
+          <HeadLine />
+          <ProjectCards/>
+          <AboutMe /> 
+          {/* <Footer />   */}
+        </AppBox>
       </ThemeProvider>
-    </AppBox>
+    </AppBg>
   );
 }
 
 
-const AppBox = styled.div`
+const AppBg = styled.div`
 position: relative;
 display: flex;
 justify-content: center;
 height: 100vh;
 text-align: center;
 font-family: 'Josefin Sans', sans-serif;
+background: linear-gradient(
+  130deg,
+  hsl(279deg 40% 74%) 0%,
+  hsl(302deg 38% 73%) 11%,
+  hsl(321deg 54% 75%) 22%,
+  hsl(334deg 70% 78%) 33%,
+  hsl(344deg 85% 80%) 44%,
+  hsl(353deg 98% 81%) 56%,
+  hsl(3deg 100% 81%) 67%,
+  hsl(11deg 100% 79%) 78%,
+  hsl(19deg 100% 77%) 89%,
+  hsl(25deg 95% 75%) 100%
+);
 @media (max-width: 768px){
   width: auto;
   overflow: hidden;
 }
 `
-const AppBg = styled.div`
+const AppBox = styled.div`
 height: 85%;
-width: 90%;
+width: 85%;
 margin: auto;
+padding: 0px;
+overflow: auto;
+backdrop-filter: blur(10px);
+background-color: ${props => props.theme.backdrop};
 border-radius: 3rem;
-border: 1px solid ${props => props.theme.text}; 
-background: ${props => props.theme.background};
+::-webkit-scrollbar {
+  width: 0;
+}
+scrollbar-width: none;
 `
-// const MainBoxInfo = styled.div`
-// display: flex;
-// flex-direction: column;
-// `
 const ToggleButtonBox = styled.div`
 display: flex;
 justify-content: center;
