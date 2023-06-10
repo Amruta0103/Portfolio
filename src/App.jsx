@@ -59,10 +59,7 @@ background: linear-gradient(
   hsl(19deg 100% 77%) 89%,
   hsl(25deg 95% 75%) 100%
 );
-@media (max-width: 768px){
-  width: auto;
-  overflow: hidden;
-}
+
 `
 const AppBox = styled.div`
 height: 85%;

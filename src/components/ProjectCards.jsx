@@ -43,7 +43,9 @@ const ProjectCardsBox = styled.div`
 justify-content: center;
 align-items: center;
 display: flex;
-flex-wrap: wrap;
+@media (max-width: 768px){
+  flex-wrap: wrap;
+}
 `
 const FlipCard = styled.div`
 position: relative;

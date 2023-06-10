@@ -33,6 +33,7 @@ flex-wrap: wrap;
 justify-content: center;
 align-items: center;
 height: 100%;
+margin: 2rem auto;
 `
 const HeadLineImage = styled.img`
 height: 250px;
@@ -42,7 +43,10 @@ margin: auto;
 border-radius: 9rem;
 border: 1px solid transparent;
 background: ${props => props.theme.backdrop};
-
+@media (max-width: 768px){
+  padding: 0.5rem;
+  transition: padding 2s;
+}
 `
 const HeadLineTitleBox = styled.div`
 margin: auto;
@@ -58,6 +62,7 @@ font-size: 20px;
 font-weight: 300;
 `
 const MyStack = styled.div`
+width: 90%;
 display: flex;
 align-items: center;
 justify-content: space-evenly;
@@ -65,12 +70,22 @@ margin: 1rem auto;
 border: 2px solid ${props => props.theme.accentColor};
 border-radius: 1rem;
 background: ${props => props.theme.accentColor};
+@media (max-width: 768px){
+  margin: 1rem auto;
+  transition: margin 1s;
+}
 `
 const Logo = styled.img`
 height: 2rem;
 width: 2rem;
 border: 2px solid transparent;
 margin: 5px;
+@media (max-width: 768px){
+  transition: width 2s, height 2s;
+  height: 1.4rem;
+  width: 1.4rem;
+  margin: 3px;
+}
 `
 
 export default HeadLine
