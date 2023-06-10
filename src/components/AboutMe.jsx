@@ -44,6 +44,6 @@ text-align: center;
 padding: 2rem 1rem;
 margin: auto;
 border-radius: 1rem;
-box-shadow: 0 2px 7px 0 ${props => props.theme.text};
+box-shadow: 0 2px 7px 0 ${props => props.theme.reverse_backdrop};
 `
 export default AboutMe;

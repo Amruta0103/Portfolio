@@ -1,6 +1,6 @@
 import styled from "styled-components";
 // import ticTac from "../assets/tictactimeImg.png";
-import link from "../assets/link-alt.svg";
+// import link from "../assets/link-alt.svg";
 import projectList from "../data/data";
 
 const ProjectCards = () => {
@@ -16,8 +16,8 @@ return(
               <CardImg src={i.image}/>
             </CardFront>
             <CardBack>
-              <ProjectLinks target="_blank" href={i.liveLink}>Live Project Link <Logo alt={"link"} src={link}/> </ProjectLinks>
-              <ProjectLinks target="_blank" href={i.gitLink}>GitHub Link <Logo alt={"link"} src={link}/> </ProjectLinks>
+              <ProjectLinks target="_blank" href={i.liveLink}>Live Project Link </ProjectLinks>
+              <ProjectLinks target="_blank" href={i.gitLink}>GitHub Link </ProjectLinks>
             </CardBack>
           </FlipCard>
         </FlipCardBox>
@@ -30,6 +30,7 @@ return(
 
 const Projects = styled.div`
 width: inherit;
+height: inherit;
 margin: auto;
 padding: 1rem;
 `
@@ -43,9 +44,7 @@ const ProjectCardsBox = styled.div`
 justify-content: center;
 align-items: center;
 display: flex;
-@media (max-width: 768px){
-  flex-wrap: wrap;
-}
+flex-wrap: wrap;
 `
 const FlipCard = styled.div`
 position: relative;
@@ -66,6 +65,11 @@ perspective: 1000px;
 margin: 2rem;
 &:hover ${FlipCard}{
 transform: rotateY(180deg);
+}
+@media (max-width: 768px){
+  width: 250px;
+  height: 150px;
+  transform: width 3s, height 3s;
 }
 `
 const CardFront = styled.div`
@@ -93,24 +97,24 @@ transform: rotateY(180deg);
 backface-visibility: hidden;
 `
 const CardImg = styled.img`
-height: 200px;
-width: 300px;
+height: inherit;
+width: inherit;
 border-radius: 1rem;
-box-shadow: 0 1px 5px 0 ${props => props.theme.text};
+box-shadow: 0 1px 5px 0 ${props => props.theme.reverse_backdrop};
 `
 const ProjectLinks = styled.a`
 display: flex;
 align-items: center;
 color: white;
-font-size: 20px;
-text-decoration: none;
+font-size: 1rem;
+text-decoration: underline;
 cursor:pointer;
 margin: 1rem auto;
 `
-const Logo = styled.img`
-height: 15px;
-width: 15px;
-border: 2px solid transparent;
-margin: 5px;
-`
+// const Logo = styled.img`
+// height: 15px;
+// width: 15px;
+// border: 2px solid transparent;
+// margin: 5px;
+// `
 export default ProjectCards;

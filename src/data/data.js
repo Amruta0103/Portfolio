@@ -11,7 +11,7 @@ const projectList = [
     image: calcyImg,
     liveLink: "https://simply-calcy.netlify.app/",
     gitLink: "https://github.com/Amruta0103/calculator",
-  }
+  },
 ]
 
 export default projectList;

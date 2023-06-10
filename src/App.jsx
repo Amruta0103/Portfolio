@@ -14,7 +14,7 @@ import { useState } from 'react';
 // import Footer from './components/Footer';
 
 function App() {
-  const [isDarkTheme, setTheme ] = useState(true);
+  const [isDarkTheme, setTheme ] = useState(false);
   console.log(isDarkTheme ? "hello" : "byebye");
   
   return (
@@ -83,6 +83,11 @@ position: fixed;
 z-index:2;
 right: 1rem;
 top: 1rem;
+@media (max-width: 768px){
+  right: 0.5rem;
+  top: 0.5rem;
+  transition: right 2s, top 2s;
+}
 `
 const ToggleButton = styled.button`
 position: sticky;

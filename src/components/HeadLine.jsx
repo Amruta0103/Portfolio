@@ -32,19 +32,18 @@ display: flex;
 flex-wrap: wrap;
 justify-content: center;
 align-items: center;
-height: 100%;
-margin: 2rem auto;
+height: 90%;
+margin: auto;
 `
 const HeadLineImage = styled.img`
 height: 250px;
 width: 250px;
 padding: 1.5rem;
 margin: auto;
-border-radius: 9rem;
-border: 1px solid transparent;
-background: ${props => props.theme.backdrop};
+border-radius: 3rem;
+border: 1.5px solid ${props => props.theme.reverse_backdrop};
 @media (max-width: 768px){
-  padding: 0.5rem;
+  padding: 0rem;
   transition: padding 2s;
 }
 `
@@ -53,7 +52,7 @@ margin: auto;
 `
 const HeadLineTitle = styled.div`
 margin: auto;
-font-size: 60px;
+font-size: 3.5rem;
 color: ${props => props.theme.text};
 font-family: 'Familjen Grotesk', sans-serif;
 `
