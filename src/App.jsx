@@ -2,7 +2,7 @@
 import styled, {ThemeProvider} from 'styled-components';
 import './App.css';
 import HeadLine from './components/HeadLine';
-// import Header from './components/Header';
+import Header from './components/Header';
 import ProjectCards from './components/ProjectCards';
 // import Footer from './components/Footer';
 import AboutMe from './components/AboutMe';
@@ -11,7 +11,6 @@ import GlobalStyles, { darkTheme, lightTheme } from './theme';
 import sun from "./assets/brightness.svg";
 import moon from "./assets/moon.svg";
 import { useState } from 'react';
-// import Footer from './components/Footer';
 
 function App() {
   const [isDarkTheme, setTheme ] = useState(false);
@@ -27,7 +26,7 @@ function App() {
           </ToggleButton>
         </ToggleButtonBox>
         <AppBox>
-          {/* <Header /> */}
+          <Header />
           <HeadLine />
           <ProjectCards/>
           <AboutMe /> 

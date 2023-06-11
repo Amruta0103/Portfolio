@@ -1,19 +1,22 @@
 import styled from "styled-components";
-import projects from "../assets/diagram-project.svg";
+// import projects from "../assets/diagram-project.svg";
 // import at from "../assets/at.svg";
-import profile from "../assets/user-solid.svg";
+// import profile from "../assets/user-solid.svg";
 
 const Header = () => {
   return(
     <HeaderBoxMain>
       <HeaderBox>
-        {/* <GlobalStyles /> */}
         <OptionsList>
           <A href="#projects">
-            <Options><OptionTitle>Projects</OptionTitle> <Logo alt="projects" src={projects}/></Options>
+            <Options><OptionTitle>Projects</OptionTitle> 
+              {/* <Logo alt="projects" src={projects}/> */}
+            </Options>
           </A>
           <A href="#aboutme">
-            <Options><OptionTitle>About</OptionTitle> <Logo alt="about" src={profile}/></Options>
+            <Options><OptionTitle>About</OptionTitle>
+              {/* <Logo alt="about" src={profile}/> */}
+            </Options>
           </A>
         </OptionsList>
       </HeaderBox>
@@ -26,8 +29,6 @@ const HeaderBoxMain = styled.div`
   z-index:1;
   width: 100%;
   height: 4rem;
-  background: rgb(142, 122, 155);
-  box-shadow: 0px 1px 10px 0.5px;
 `
 const HeaderBox = styled.div`
   font-size: 16px;
@@ -52,10 +53,8 @@ const Options = styled.li`
   margin: 0.5rem;
   cursor: pointer;
   border: 1px solid transparent;
-
   &:hover{
-    background: ${props => props.theme.accentColor};
-    color: ${props =>props.theme.text};
+    color: ${props =>props.theme.background};
   }
 `
 const OptionTitle = styled.div`
@@ -64,17 +63,17 @@ const OptionTitle = styled.div`
     display: none;
   }
 `
-const Logo = styled.img`
-  height: 15px;
-  width: 15px;
-  border: 2px solid transparent;
-  margin: 5px;
-  @media (max-width: 400px) {
-    transition: width 1s, height 1s;
-    height: 20px;
-    width: 20px;
-  }
-`
+// const Logo = styled.img`
+//   height: 15px;
+//   width: 15px;
+//   border: 2px solid transparent;
+//   margin: 5px;
+//   @media (max-width: 400px) {
+//     transition: width 1s, height 1s;
+//     height: 20px;
+//     width: 20px;
+//   }
+// `
 const A = styled.a`
   font-size inherit;
   text-decoration: none;

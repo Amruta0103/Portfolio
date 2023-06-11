@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import image from "../assets/undraw_dev.svg";
+// import image from "../assets/undraw_dev.svg";
 import css from "../assets/icons8-css.svg";
 import html from "../assets/icons8-html.svg"
 import js from "../assets/icons8-javascript.svg";
@@ -22,7 +22,7 @@ return(
         <Logo alt="mongo" src={mongo}/>
       </MyStack>
     </HeadLineTitleBox>
-    <HeadLineImage src={image} alt={"tempimg"}/>
+    {/* <HeadLineImage src={image} alt={"tempimg"}/> */}
   </HeadLineBox>
 )
 }
@@ -32,21 +32,21 @@ display: flex;
 flex-wrap: wrap;
 justify-content: center;
 align-items: center;
-height: 90%;
+height: 100%;
 margin: auto;
 `
-const HeadLineImage = styled.img`
-height: 250px;
-width: 250px;
-padding: 1.5rem;
-margin: auto;
-border-radius: 3rem;
-border: 1.5px solid ${props => props.theme.reverse_backdrop};
-@media (max-width: 768px){
-  padding: 0rem;
-  transition: padding 2s;
-}
-`
+// const HeadLineImage = styled.img`
+// height: 250px;
+// width: 250px;
+// padding: 1.5rem;
+// margin: auto;
+// border-radius: 3rem;
+// border: 1.5px solid ${props => props.theme.reverse_backdrop};
+// @media (max-width: 768px){
+//   padding: 0rem;
+//   transition: padding 2s;
+// }
+// `
 const HeadLineTitleBox = styled.div`
 margin: auto;
 `

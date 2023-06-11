@@ -30,7 +30,7 @@ return(
 
 const Projects = styled.div`
 width: inherit;
-height: inherit;
+min-height: 95%;
 margin: auto;
 padding: 1rem;
 `
@@ -57,8 +57,8 @@ transform-style: preserve-3d;
 `
 const FlipCardBox = styled.div`
 position: relative;
-height: 200px;
-width: 300px;
+height: 150px;
+width: 200px;
 border-radius: 1rem;
 z-index: 0;
 perspective: 1000px;
