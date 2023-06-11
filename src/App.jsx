@@ -20,13 +20,15 @@ function App() {
     <AppBg>
       <ThemeProvider theme={isDarkTheme ? darkTheme : lightTheme}>
         <GlobalStyles />
-        <ToggleButtonBox>
-          <ToggleButton onClick={()=> setTheme(isDarkTheme => !isDarkTheme)}>
-            <ToggleImage src={isDarkTheme? moon : sun} />
-          </ToggleButton>
-        </ToggleButtonBox>
+        <HeadersBox>
+          <HeadersBoxSub>
+            <Header />
+            <ToggleButton onClick={()=> setTheme(isDarkTheme => !isDarkTheme)}>
+              <ToggleImage src={isDarkTheme? moon : sun} />
+            </ToggleButton>
+          </HeadersBoxSub>
+        </HeadersBox>
         <AppBox>
-          <Header />
           <HeadLine />
           <ProjectCards/>
           <AboutMe /> 
@@ -61,7 +63,8 @@ background: linear-gradient(
 
 `
 const AppBox = styled.div`
-height: 85%;
+position: relative;
+height: 80%;
 width: 85%;
 margin: auto;
 padding: 0px;
@@ -74,26 +77,31 @@ border-radius: 3rem;
 }
 scrollbar-width: none;
 `
-const ToggleButtonBox = styled.div`
+const HeadersBox = styled.div`
 display: flex;
 justify-content: center;
 align-items:center;
 position: fixed;
 z-index:2;
-right: 1rem;
-top: 1rem;
+right: 0.5rem;
+top: 0.5rem;
 @media (max-width: 768px){
   right: 0.5rem;
   top: 0.5rem;
   transition: right 2s, top 2s;
 }
 `
-const ToggleButton = styled.button`
+const HeadersBoxSub = styled.div`
 position: sticky;
+display: flex;
+justify-content: center;
+align-items: center;
+`
+const ToggleButton = styled.button`
 width: 2.5rem;
 height: 2rem;
-border: 1.5px solid transparent;
 border-radius: 2rem;
+border: 1px solid transparent;
 background: transparent;
 `
 const ToggleImage = styled.img`

@@ -25,23 +25,22 @@ const Header = () => {
 }
 
 const HeaderBoxMain = styled.div`
-  position: fixed;
-  z-index:1;
-  width: 100%;
-  height: 4rem;
+position: sticky;
+width: 100%;
+height: 3rem;
 `
 const HeaderBox = styled.div`
-  font-size: 16px;
-  font-weight: 300;
-  width: inherit;
-  margin: 0rem;
-  text-align: right;
+font-size: 16px;
+font-weight: 300;
+width: inherit;
+margin: 0rem;
+text-align: right;
 `
 const OptionsList = styled.ul`
   display: flex;
   flex-direction: row;
   width: fit-content;
-  margin: auto 5rem auto auto;
+  margin: auto;
   padding: 0em;
 `
 const Options = styled.li`
