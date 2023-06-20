@@ -13,8 +13,8 @@ const Header = () => {
               {/* <Logo alt="projects" src={projects}/> */}
             </Options>
           </A>
-          <A href="#aboutme">
-            <Options><OptionTitle>About</OptionTitle>
+          <A href="#connect">
+            <Options><OptionTitle>Connect</OptionTitle>
               {/* <Logo alt="about" src={profile}/> */}
             </Options>
           </A>
@@ -27,14 +27,15 @@ const Header = () => {
 const HeaderBoxMain = styled.div`
 position: sticky;
 width: 100%;
-height: 3rem;
 `
 const HeaderBox = styled.div`
 font-size: 16px;
-font-weight: 300;
+font-weight: 400;
 width: inherit;
 margin: 0rem;
-text-align: right;
+text-align: center;
+font-family: 'Familjen Grotesk', sans-serif;
+color: ${props =>props.theme.background};
 `
 const OptionsList = styled.ul`
   display: flex;
@@ -53,7 +54,8 @@ const Options = styled.li`
   cursor: pointer;
   border: 1px solid transparent;
   &:hover{
-    color: ${props =>props.theme.background};
+    text-decoration: underline;
+    
   }
 `
 const OptionTitle = styled.div`

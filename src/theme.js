@@ -12,14 +12,14 @@ export const darkTheme = {
   background: "#2d2d30",
   accentColor:"#cba0d5",
   backdrop: "rgba(0,0,0,0.7)",
-  reverse_backdrop:"rgba(255,255,255,0.5)",
+  reverse_backdrop:"rgba(255,255,255,0.3)",
 }
 
 export const lightTheme =  {
   text: "#1a1a1a",
   background:"#fff6e3",
   accentColor:"#cba0d5",
-  backdrop: "rgba(255,255,255,0.5)",
+  backdrop: "rgba(255, 255, 255, 0.5)",
   reverse_backdrop: "rgba(0,0,0,0.7)",
 }
 

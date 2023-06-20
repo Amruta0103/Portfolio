@@ -10,7 +10,7 @@ return(
     <ProjectCardsBox>
       {projectList.map((i)=>{
         return(
-        <FlipCardBox>
+        <FlipCardBox key={i.title}>
           <FlipCard>
             <CardFront>
               <CardImg src={i.image}/>

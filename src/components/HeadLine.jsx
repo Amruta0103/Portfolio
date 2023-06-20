@@ -1,11 +1,11 @@
 import styled from "styled-components";
 // import image from "../assets/undraw_dev.svg";
-import css from "../assets/icons8-css.svg";
-import html from "../assets/icons8-html.svg"
-import js from "../assets/icons8-javascript.svg";
-import react from "../assets/icons8-react.svg";
-import nodejs from "../assets/icons8-nodejs.svg";
-import mongo from "../assets/mongodb.svg";
+// import css from "../assets/icons8-css.svg";
+// import html from "../assets/icons8-html.svg"
+// import js from "../assets/icons8-javascript.svg";
+// import react from "../assets/icons8-react.svg";
+// import nodejs from "../assets/icons8-nodejs.svg";
+// import mongo from "../assets/mongodb.svg";
 
 const HeadLine = () => {
 return(
@@ -13,14 +13,14 @@ return(
     <HeadLineTitleBox>
       <HeadLineTitle>Amruta Dharap</HeadLineTitle>
       <SubTitle>Front-End Developer</SubTitle>
-      <MyStack>
+      {/* <MyStack>
         <Logo alt="css" src={css} />
         <Logo alt="html" src={html} />
         <Logo alt="js" src={js} />
         <Logo alt="react" src={react} />
         <Logo alt="nodejs" src={nodejs} />
         <Logo alt="mongo" src={mongo}/>
-      </MyStack>
+      </MyStack> */}
     </HeadLineTitleBox>
     {/* <HeadLineImage src={image} alt={"tempimg"}/> */}
   </HeadLineBox>
@@ -32,7 +32,7 @@ display: flex;
 flex-wrap: wrap;
 justify-content: center;
 align-items: center;
-height: 100%;
+// height: 100%;
 margin: auto;
 `
 // const HeadLineImage = styled.img`
@@ -60,31 +60,31 @@ const SubTitle = styled.div`
 font-size: 20px;
 font-weight: 300;
 `
-const MyStack = styled.div`
-width: 90%;
-display: flex;
-align-items: center;
-justify-content: space-evenly;
-margin: 1rem auto;
-border: 2px solid ${props => props.theme.accentColor};
-border-radius: 1rem;
-background: ${props => props.theme.accentColor};
-@media (max-width: 768px){
-  margin: 1rem auto;
-  transition: margin 1s;
-}
-`
-const Logo = styled.img`
-height: 2rem;
-width: 2rem;
-border: 2px solid transparent;
-margin: 5px;
-@media (max-width: 768px){
-  transition: width 2s, height 2s;
-  height: 1.4rem;
-  width: 1.4rem;
-  margin: 3px;
-}
-`
+// const MyStack = styled.div`
+// width: 90%;
+// display: flex;
+// align-items: center;
+// justify-content: space-evenly;
+// margin: 1rem auto;
+// border: 2px solid ${props => props.theme.accentColor};
+// border-radius: 1rem;
+// background: ${props => props.theme.accentColor};
+// @media (max-width: 768px){
+//   margin: 1rem auto;
+//   transition: margin 1s;
+// }
+// `
+// const Logo = styled.img`
+// height: 2rem;
+// width: 2rem;
+// border: 2px solid transparent;
+// margin: 5px;
+// @media (max-width: 768px){
+//   transition: width 2s, height 2s;
+//   height: 1.4rem;
+//   width: 1.4rem;
+//   margin: 3px;
+// }
+// `
 
 export default HeadLine

@@ -1,9 +1,9 @@
 import styled from "styled-components";
 
-const AboutMe = () => {
+const TempNew = () => {
   return(
-    <AboutMeBox id="aboutme">
-      {/* <Temp>About Me <TempEmo>&#58;&#41;</TempEmo> </Temp> */}
+    <TempNewBox>
+        <HeadLineTitle>Amruta Dharap</HeadLineTitle>
       <AboutMeSub>
         <Msg>
           I am Amruta, a Front-end Developer.<br />
@@ -12,39 +12,42 @@ const AboutMe = () => {
           Let's connect to find more ways to make "Web" an awesome experience for users!
         </Msg>
       </AboutMeSub>
-    </AboutMeBox>
+      <SubTitle>Front-End Developer</SubTitle>
+    </TempNewBox>
   )
 }
 
-const AboutMeBox = styled.div`
-display:flex;
+const TempNewBox = styled.div`
+display: flex;
 flex-direction: column;
 justify-content: center;
 align-items: center;
-// height: 100%;
-margin: auto;
-font-size: 20px;
-font-weight: 300;
+height: 100%;
+width: 100%;
 `
-// const Temp = styled.div`
-// display:flex;
-// align-items:center;
-// font-size: xx-large;
-// font-family: 'Familjen Grotesk', sans-serif;
-// `
-// const TempEmo = styled.div`
-// margin: auto 0.9rem;
-// `
+const HeadLineTitle = styled.div`
+margin: auto auto auto 3rem;
+font-size: 3.5rem;
+color: ${props => props.theme.text};
+font-family: 'Familjen Grotesk', sans-serif;
+`
+const SubTitle = styled.div`
+font-size: 27px;
+font-weight: 400;
+font-family: 'Familjen Grotesk', sans-serif;
+margin: auto 3rem auto auto;
+`
 const AboutMeSub = styled.div`
-margin: 4rem auto;
+margin: 1rem auto;
 `
 const Msg = styled.div`
 width: 60%;
+font-size: 22px;
 font-weight: 300;
 text-align: center;
 padding: 2rem 1rem;
 margin: auto;
 border-radius: 1rem;
-box-shadow: 0 2px 7px 0 ${props => props.theme.reverse_backdrop};
 `
-export default AboutMe;
+
+export default TempNew;
