@@ -36,9 +36,8 @@ padding: 1rem;
 `
 const ProjectsTitle = styled.div`
 font-size: 40px;
-font-weight: 400;
-margin: 3rem auto;
-font-family: 'Familjen Grotesk', sans-serif;
+font-weight: 300;
+margin: auto;
 `
 const ProjectCardsBox = styled.div`
 justify-content: center;
@@ -57,8 +56,8 @@ transform-style: preserve-3d;
 `
 const FlipCardBox = styled.div`
 position: relative;
-height: 150px;
-width: 200px;
+height: 180px;
+width: 250px;
 border-radius: 1rem;
 z-index: 0;
 perspective: 1000px;
@@ -105,7 +104,7 @@ box-shadow: 0 1px 5px 0 ${props => props.theme.reverse_backdrop};
 const ProjectLinks = styled.a`
 display: flex;
 align-items: center;
-color: white;
+color: ${props => props.theme.text};
 font-size: 1rem;
 text-decoration: underline;
 cursor:pointer;

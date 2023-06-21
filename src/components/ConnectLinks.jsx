@@ -9,7 +9,7 @@ import Footer from "./Footer";
 
 const ConnectLinks = () => {
   return(
-    <ConnectLinksBox>
+    <ConnectLinksBox id="connect">
       <ConnectInfo>
         Let's Catch up, collaborate and explore more ways to make web an awesome place!  
       </ConnectInfo>
@@ -45,6 +45,10 @@ position: relative;
 `
 const ConnectInfo = styled.div`
 margin: 1rem auto;
+font-weight: 100;
+font-size: 18px;
+width: 50%;
+}
 `
 const LinksBlock = styled.div`
 font-size: 20px;

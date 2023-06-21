@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 const TempNew = () => {
   return(
-    <TempNewBox>
+    <TempNewBox id="about">
         <HeadLineTitle>Amruta Dharap</HeadLineTitle>
       <AboutMeSub>
         <Msg>
@@ -29,12 +29,12 @@ const HeadLineTitle = styled.div`
 margin: auto auto auto 3rem;
 font-size: 3.5rem;
 color: ${props => props.theme.text};
-font-family: 'Familjen Grotesk', sans-serif;
+font-family: 'Space Grotesk', sans-serif;
 `
 const SubTitle = styled.div`
 font-size: 27px;
 font-weight: 400;
-font-family: 'Familjen Grotesk', sans-serif;
+font-family: 'Space Grotesk', sans-serif;
 margin: auto 3rem auto auto;
 `
 const AboutMeSub = styled.div`
@@ -42,8 +42,8 @@ margin: 1rem auto;
 `
 const Msg = styled.div`
 width: 60%;
-font-size: 22px;
-font-weight: 300;
+font-size: 18px;
+font-weight: 100;
 text-align: center;
 padding: 2rem 1rem;
 margin: auto;

@@ -8,6 +8,11 @@ const Header = () => {
     <HeaderBoxMain>
       <HeaderBox>
         <OptionsList>
+        <A href="#about">
+            <Options><OptionTitle>About</OptionTitle> 
+              {/* <Logo alt="projects" src={projects}/> */}
+            </Options>
+          </A>
           <A href="#projects">
             <Options><OptionTitle>Projects</OptionTitle> 
               {/* <Logo alt="projects" src={projects}/> */}
@@ -30,33 +35,31 @@ width: 100%;
 `
 const HeaderBox = styled.div`
 font-size: 16px;
-font-weight: 400;
+font-weight: 300;
 width: inherit;
 margin: 0rem;
 text-align: center;
-font-family: 'Familjen Grotesk', sans-serif;
 color: ${props =>props.theme.background};
 `
 const OptionsList = styled.ul`
-  display: flex;
-  flex-direction: row;
-  width: fit-content;
-  margin: auto;
-  padding: 0em;
+display: flex;
+flex-direction: row;
+width: fit-content;
+margin: auto;
+padding: 0em;
 `
 const Options = styled.li`
-  display:flex;
-  align-items:center;
-  padding: 0.5em;
-  list-style:none;
-  border-radius: 2rem;
-  margin: 0.5rem;
-  cursor: pointer;
-  border: 1px solid transparent;
-  &:hover{
-    text-decoration: underline;
-    
-  }
+display:flex;
+align-items:center;
+padding: 0.5em;
+list-style:none;
+border-radius: 2rem;
+margin: 0.5rem;
+cursor: pointer;
+border: 1px solid transparent;
+&:hover{
+  text-decoration: underline;
+}
 `
 const OptionTitle = styled.div`
   @media (max-width: 400px) {

@@ -21,10 +21,8 @@ display:flex;
 flex-direction: column;
 justify-content: center;
 align-items: center;
-// height: 100%;
 margin: auto;
 font-size: 20px;
-font-weight: 300;
 `
 // const Temp = styled.div`
 // display:flex;
@@ -40,11 +38,12 @@ margin: 4rem auto;
 `
 const Msg = styled.div`
 width: 60%;
-font-weight: 300;
+font-weight: 200;
 text-align: center;
 padding: 2rem 1rem;
 margin: auto;
 border-radius: 1rem;
 box-shadow: 0 2px 7px 0 ${props => props.theme.reverse_backdrop};
+font-family: 'Inter Tight', sans-serif;
 `
 export default AboutMe;
