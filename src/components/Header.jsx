@@ -47,6 +47,9 @@ flex-direction: row;
 width: fit-content;
 margin: auto;
 padding: 0em;
+@media (max-width: 768px){
+  flex-direction: column;
+}
 `
 const Options = styled.li`
 display:flex;

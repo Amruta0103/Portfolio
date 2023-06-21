@@ -4,7 +4,7 @@ import github from "../assets/square-github.svg";
 import resume from "../assets/file-arrow-down-solid.svg";
 import pdf from "../assets/AmrutaDharap.pdf";
 import mail from "../assets/envelope-solid.svg";
-import Footer from "./Footer";
+// import Footer from "./Footer";
 
 
 const ConnectLinks = () => {
@@ -29,7 +29,11 @@ const ConnectLinks = () => {
           </A>
           </Links>
       </LinksBlock>
-      <Footer />
+      <FooterBox>
+      <LastText>
+        Made with ❤ by Amruta Dharap
+      </LastText>
+    </FooterBox>
     </ConnectLinksBox>
   )
 }
@@ -74,5 +78,16 @@ font-size inherit;
 text-decoration: none;
 color: inherit;
 `
-
+const FooterBox = styled.div`
+width: 100%;
+display: flex;
+align-items: center;
+justify-content: center;
+position: absolute;
+bottom: 0rem;
+`
+const LastText = styled.div`
+margin: 1rem auto;
+font-size: 18px;
+`
 export default ConnectLinks;

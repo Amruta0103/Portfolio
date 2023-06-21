@@ -1,11 +1,8 @@
 // import logo from './logo.svg';
 import styled, {ThemeProvider} from 'styled-components';
 import './App.css';
-// import HeadLine from './components/HeadLine';
 import Header from './components/Header';
 import ProjectCards from './components/ProjectCards';
-// import Footer from './components/Footer';
-// import AboutMe from './components/AboutMe';
 import GlobalStyles, { darkTheme, lightTheme } from './theme';
 import sun from "./assets/brightness.svg";
 import moon from "./assets/moon.svg";
@@ -20,17 +17,17 @@ function App() {
     <AppBg>
       <ThemeProvider theme={isDarkTheme ? darkTheme : lightTheme}>
         <GlobalStyles />
-        <HeadersBox>
-          <Header />
+        <Headers>
+          <HeadersBox>
+            <Header />
+          </HeadersBox>
           <ToggleButton onClick={()=> setTheme(isDarkTheme => !isDarkTheme)}>
             <ToggleImage src={isDarkTheme? moon : sun} />
           </ToggleButton>
-        </HeadersBox>
+        </Headers>
         <AppBox>
           <TempNew />
           <Hr />
-          {/* <HeadLine /> */}
-          {/* <AboutMe />  */}
           <ProjectCards/>
           <Hr />
           <ConnectLinks />
@@ -79,7 +76,7 @@ border-radius: 3rem;
 }
 scrollbar-width: none;
 `
-const HeadersBox = styled.div`
+const Headers = styled.div`
 display: flex;
 justify-content: center;
 align-items: center;
@@ -88,8 +85,12 @@ z-index:2;
 right: 0.5rem;
 top: 0.5rem;
 @media (max-width: 768px){
+  flex-direction: column-reverse;
   transition: right 2s, top 2s;
 }
+`
+const HeadersBox = styled.div`
+
 `
 const ToggleButton = styled.button`
 width: 2.5rem;
