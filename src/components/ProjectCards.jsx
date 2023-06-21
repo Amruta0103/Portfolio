@@ -66,7 +66,7 @@ margin: 2rem;
 transform: rotateY(180deg);
 }
 @media (max-width: 768px){
-  width: 250px;
+  min-width: 200px;
   height: 150px;
   transform: width 3s, height 3s;
 }

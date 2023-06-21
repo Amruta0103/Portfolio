@@ -23,22 +23,33 @@ flex-direction: column;
 justify-content: center;
 align-items: center;
 height: 100%;
-width: 100%;
+position: relative;
 `
 const HeadLineTitle = styled.div`
 margin: auto auto auto 3rem;
 font-size: 3.5rem;
 color: ${props => props.theme.text};
 font-family: 'Space Grotesk', sans-serif;
+@media (max-width: 768px){
+  margin: 1rem auto;
+  font-size: 2.3rem;
+}
 `
 const SubTitle = styled.div`
-font-size: 27px;
+font-size: 2.5rem;
 font-weight: 400;
 font-family: 'Space Grotesk', sans-serif;
 margin: auto 3rem auto auto;
+@media (max-width: 768px){
+  margin: 1rem auto;
+  font-size: 1.3rem;
+}
 `
 const AboutMeSub = styled.div`
 margin: 1rem auto;
+@media (max-width: 768px){
+  margin: auto;
+}
 `
 const Msg = styled.div`
 width: 60%;
@@ -48,6 +59,11 @@ text-align: center;
 padding: 2rem 1rem;
 margin: auto;
 border-radius: 1rem;
+@media (max-width: 550px){
+  width: 100%;
+  padding: 0rem;
+  font-size: 16px;
+}
 `
 
 export default TempNew;

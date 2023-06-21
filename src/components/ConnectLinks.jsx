@@ -52,7 +52,6 @@ margin: 1rem auto;
 font-weight: 100;
 font-size: 18px;
 width: 50%;
-}
 `
 const LinksBlock = styled.div`
 font-size: 20px;
@@ -63,15 +62,18 @@ const Links = styled.div`
 display: flex;
 justify-content: space-evenly;
 align-items: center;
-width: 50%;
+max-width: 50%;
 margin: auto;
 `
 const Logo = styled.img`
 height: 25px;
 width: 25px;
-margin: 1rem;
+margin: 0.5rem;
 padding: 0.5rem;
 border-radius: 1rem;
+@media (max-width: 768px){
+  margin: 0rem
+}
 `
 const A = styled.a`
 font-size inherit;
@@ -85,6 +87,9 @@ align-items: center;
 justify-content: center;
 position: absolute;
 bottom: 0rem;
+@media (max-width: 768px){
+  width: 80%;
+}
 `
 const LastText = styled.div`
 margin: 1rem auto;

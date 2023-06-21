@@ -42,6 +42,7 @@ position: relative;
 display: flex;
 justify-content: center;
 height: 100vh;
+min-width: 350px;
 text-align: center;
 background-image: linear-gradient(
   120deg,
@@ -59,9 +60,9 @@ background-image: linear-gradient(
 
 `
 const AppBox = styled.div`
-position: relative;
-height: 80%;
-width: 75%;
+height: 100%;
+max-height: 80%;
+width: 80%;
 margin: auto;
 padding: 0px;
 overflow: auto;
@@ -98,7 +99,7 @@ const Hr = styled.hr`
 width: 50%;
 opacity: 60%;
 height: 1px;
-margin: 2rem auto;
+margin: 4rem auto;
 background-color:${props => props.theme.text};
 `
 export default App;
