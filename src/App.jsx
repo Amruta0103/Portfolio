@@ -18,9 +18,7 @@ function App() {
       <ThemeProvider theme={isDarkTheme ? darkTheme : lightTheme}>
         <GlobalStyles />
         <Headers>
-          <HeadersBox>
-            <Header />
-          </HeadersBox>
+          <Header />
           <ToggleButton onClick={()=> setTheme(isDarkTheme => !isDarkTheme)}>
             <ToggleImage src={isDarkTheme? moon : sun} />
           </ToggleButton>
@@ -84,13 +82,6 @@ position: fixed;
 z-index:2;
 right: 0.5rem;
 top: 0.5rem;
-@media (max-width: 768px){
-  flex-direction: column-reverse;
-  transition: right 2s, top 2s;
-}
-`
-const HeadersBox = styled.div`
-
 `
 const ToggleButton = styled.button`
 width: 2.5rem;
@@ -98,10 +89,6 @@ height: 2rem;
 border-radius: 2rem;
 border: 1px solid transparent;
 background: transparent;
-// position: fixed;
-// z-index:3;
-// top: 1rem;
-// right: 1rem;
 `
 const ToggleImage = styled.img`
 height: 23px;
