@@ -1,27 +1,18 @@
-// import logo from './logo.svg';
-import styled from 'styled-components';
+import styled, {ThemeProvider} from 'styled-components';
 import './App.css';
 import Header from './components/Header';
 import ProjectCards from './components/ProjectCards';
-import GlobalStyles, { darkTheme, lightTheme } from './theme';
-// import sun from "./assets/brightness.svg";
-// import moon from "./assets/moon.svg";
-// import { useState } from 'react';
+import GlobalStyles, { lightTheme } from './theme';
 import TempNew from './components/tempNew';
 import ConnectLinks from './components/ConnectLinks';
 
 function App() {
-  // const [isDarkTheme, setTheme ] = useState(false);
-  
   return (
     <AppBg>
-      {/* <ThemeProvider theme={isDarkTheme ? darkTheme : lightTheme}> */}
+      <ThemeProvider theme={ lightTheme}>
         <GlobalStyles />
         <Headers>
           <Header />
-          {/* <ToggleButton onClick={()=> setTheme(isDarkTheme => !isDarkTheme)}> */}
-            {/* <ToggleImage src={isDarkTheme? moon : sun} /> */}
-          {/* </ToggleButton> */}
         </Headers>
         <AppBox>
           <TempNew />
@@ -30,7 +21,7 @@ function App() {
           <Hr />
           <ConnectLinks />
         </AppBox>
-      {/* </ThemeProvider> */}
+      </ThemeProvider>
     </AppBg>
   );
 }
