@@ -4,8 +4,8 @@ import './App.css';
 import Header from './components/Header';
 import ProjectCards from './components/ProjectCards';
 import GlobalStyles, { darkTheme, lightTheme } from './theme';
-import sun from "./assets/brightness.svg";
-import moon from "./assets/moon.svg";
+// import sun from "./assets/brightness.svg";
+// import moon from "./assets/moon.svg";
 // import { useState } from 'react';
 import TempNew from './components/tempNew';
 import ConnectLinks from './components/ConnectLinks';
@@ -20,7 +20,7 @@ function App() {
         <Headers>
           <Header />
           {/* <ToggleButton onClick={()=> setTheme(isDarkTheme => !isDarkTheme)}> */}
-            <ToggleImage src={isDarkTheme? moon : sun} />
+            {/* <ToggleImage src={isDarkTheme? moon : sun} /> */}
           {/* </ToggleButton> */}
         </Headers>
         <AppBox>
@@ -91,10 +91,10 @@ top: 0.5rem;
 // border: 1px solid transparent;
 // background: transparent;
 // `
-const ToggleImage = styled.img`
-height: 23px;
-width: 23px;
-`
+// const ToggleImage = styled.img`
+// height: 23px;
+// width: 23px;
+// `
 const Hr = styled.hr`
 width: 50%;
 opacity: 60%;
