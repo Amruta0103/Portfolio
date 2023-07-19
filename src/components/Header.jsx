@@ -34,12 +34,17 @@ position: sticky;
 width: 100%;
 `
 const HeaderBox = styled.div`
-font-size: 16px;
+font-size: 18px;
 font-weight: 300;
 width: inherit;
 margin: 0rem;
 text-align: center;
 color: ${props =>props.theme.background};
+`
+const A = styled.a`
+  font-size inherit;
+  text-decoration: none;
+  color: ${props => props.theme.text};
 `
 const OptionsList = styled.ul`
 display: flex;
@@ -75,11 +80,6 @@ const Logo = styled.img`
     width: 20px;
     display: block;
   }
-`
-const A = styled.a`
-  font-size inherit;
-  text-decoration: none;
-  color: inherit;
 `
 
 export default Header;
