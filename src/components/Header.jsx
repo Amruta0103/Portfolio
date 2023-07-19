@@ -34,8 +34,8 @@ position: sticky;
 width: 100%;
 `
 const HeaderBox = styled.div`
-font-size: 18px;
-font-weight: 300;
+font-size: 14px;
+font-weight: 400;
 width: inherit;
 margin: 0rem;
 text-align: center;
