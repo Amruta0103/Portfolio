@@ -18,8 +18,8 @@ return(
               </CardImgBox>
             </CardFront>
             <CardBack>
-              <ProjectLinks target="_blank" href={i.liveLink}>Live Project Link </ProjectLinks>
-              <ProjectLinks target="_blank" href={i.gitLink}>GitHub Link </ProjectLinks>
+              <ProjectLinks target="_blank" href={i.liveLink}>Live Link</ProjectLinks>
+              <ProjectLinks target="_blank" href={i.gitLink}>GitHub</ProjectLinks>
             </CardBack>
           </FlipCard>
         </FlipCardBox>
