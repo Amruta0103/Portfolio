@@ -1,5 +1,5 @@
-import ticTac from "../assets/tictactimeImg.png";
-import calcyImg from "../assets/simplyCalcyImg.png";
+import ticTac from "../assets/hourglass-start.svg";
+import calcyImg from "../assets/calculator-simple.svg";
 
 const projectList = [
   {

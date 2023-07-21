@@ -13,7 +13,9 @@ return(
         <FlipCardBox key={i.title}>
           <FlipCard>
             <CardFront>
-              <CardImg src={i.image}/>
+              <CardImgBox>
+                <CardImageLogo src={i.image} />
+              </CardImgBox>
             </CardFront>
             <CardBack>
               <ProjectLinks target="_blank" href={i.liveLink}>Live Project Link </ProjectLinks>
@@ -95,11 +97,20 @@ background-color: ${props => props.theme.accentColor};
 transform: rotateY(180deg);
 backface-visibility: hidden;
 `
-const CardImg = styled.img`
+const CardImgBox = styled.div`
+display: flex;
+justify-content: center;
+align-items: center;
 height: inherit;
 width: inherit;
 border-radius: 1rem;
+background: ${props => props.theme.accentColor};
 box-shadow: 0 1px 5px 0 ${props => props.theme.reverse_backdrop};
+`
+const CardImageLogo = styled.img`
+height: 3rem;
+width: 3rem;
+margin: auto;
 `
 const ProjectLinks = styled.a`
 display: flex;
