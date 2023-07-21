@@ -18,7 +18,7 @@ export const darkTheme = {
 export const lightTheme =  {
   text: "#1a1a1a",
   background:"#fff6e3",
-  accentColor:"#cba0d5",
+  accentColor:"#45b482",
   backdrop: "rgba(255, 255, 255, 0.5)",
   reverse_backdrop: "rgba(0,0,0,0.7)",
 }
