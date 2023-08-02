@@ -5,7 +5,7 @@ const projectList = [
   {
     title:"Timer",
     image: ticTac,
-    liveLink: "https://tictactime.netlify.app/",
+    liveLink: "https://countmytime.netlify.app/",
     gitLink: "https://github.com/Amruta0103/tictactime",
   },
   {
