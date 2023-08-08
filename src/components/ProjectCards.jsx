@@ -35,17 +35,21 @@ width: inherit;
 min-height: 95%;
 margin: auto;
 padding: 1rem;
+display: flex;
+flex-direction: column;
+align-items: center;
 `
 const ProjectsTitle = styled.div`
 font-size: 40px;
 font-weight: 300;
-margin: auto;
+margin: 1rem auto;
 `
 const ProjectCardsBox = styled.div`
 justify-content: center;
 align-items: center;
 display: flex;
 flex-wrap: wrap;
+margin: auto;
 `
 const FlipCard = styled.div`
 position: relative;

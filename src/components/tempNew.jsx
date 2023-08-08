@@ -42,7 +42,7 @@ font-family: 'Space Grotesk', sans-serif;
 margin: auto 3rem auto auto;
 @media (max-width: 768px){
   margin: 1rem auto;
-  font-size: 1.3rem;
+  font-size: 2rem;
 }
 `
 const AboutMeSub = styled.div`
@@ -53,7 +53,7 @@ margin: 1rem auto;
 `
 const Msg = styled.div`
 width: 60%;
-font-size: 18px;
+font-size: 1.5rem;
 font-weight: 100;
 text-align: center;
 padding: 2rem 1rem;
@@ -62,7 +62,6 @@ border-radius: 1rem;
 @media (max-width: 550px){
   width: 100%;
   padding: 0rem;
-  font-size: 16px;
 }
 `
 

@@ -49,9 +49,12 @@ position: relative;
 `
 const ConnectInfo = styled.div`
 margin: 1rem auto;
-font-weight: 100;
-font-size: 18px;
+font-weight: 300;
+font-size: 2rem;
 width: 50%;
+@media (max-width: 800px){
+  font-size: 2.5rem;
+}
 `
 const LinksBlock = styled.div`
 font-size: 20px;
@@ -71,8 +74,9 @@ width: 25px;
 margin: 0.5rem;
 padding: 0.5rem;
 border-radius: 1rem;
-@media (max-width: 768px){
-  margin: 0rem
+@media (min-height: 900px){
+  height: 2.5rem;
+  width: 2.5rem;
 }
 `
 const A = styled.a`
