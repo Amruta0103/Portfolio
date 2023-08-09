@@ -52,7 +52,7 @@ const Msg = styled.div`
 width: 60%;
 font-weight: 100;
 text-align: center;
-padding: 1rem;
+padding: 2rem 1rem;
 margin: auto;
 border-radius: 1rem;
 @media (max-width: 768px){
