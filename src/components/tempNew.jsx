@@ -32,7 +32,7 @@ color: ${props => props.theme.text};
 font-family: 'Space Grotesk', sans-serif;
 @media (max-width: 768px){
   margin: 1rem auto;
-  font-size: 2.5em;
+  font-size: 2em;
 }
 `
 const SubTitle = styled.div`
@@ -42,7 +42,7 @@ font-family: 'Space Grotesk', sans-serif;
 margin: auto 3rem auto auto;
 @media (max-width: 768px){
   margin: 1rem auto;
-  font-size: 2em;
+  font-size: 1.5em;
 }
 `
 const AboutMeSub = styled.div`
@@ -52,7 +52,7 @@ const Msg = styled.div`
 width: 60%;
 font-weight: 100;
 text-align: center;
-padding: 2rem 1rem;
+padding: 1rem;
 margin: auto;
 border-radius: 1rem;
 @media (max-width: 768px){
