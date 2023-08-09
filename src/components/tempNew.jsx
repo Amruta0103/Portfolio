@@ -22,28 +22,27 @@ display: flex;
 flex-direction: column;
 justify-content: center;
 align-items: center;
-height: 100%;
-margin: auto;
+height: 80vh;
 position: relative;
 `
 const HeadLineTitle = styled.div`
 margin: auto auto auto 3rem;
-font-size: 3.5rem;
+font-size: 3em;
 color: ${props => props.theme.text};
 font-family: 'Space Grotesk', sans-serif;
-@media (max-width: 600px){
+@media (max-width: 768px){
   margin: 1rem auto;
-  font-size: 2rem;
+  font-size: 2.5em;
 }
 `
 const SubTitle = styled.div`
-font-size: 2.5rem;
+font-size: 2.5em;
 font-weight: 400;
 font-family: 'Space Grotesk', sans-serif;
 margin: auto 3rem auto auto;
 @media (max-width: 768px){
   margin: 1rem auto;
-  font-size: 2rem;
+  font-size: 2em;
 }
 `
 const AboutMeSub = styled.div`
@@ -60,7 +59,7 @@ border-radius: 1rem;
   font-size: 1em;
 }
 @media (min-width: 1080px){
-  font-size: 2em;
+  font-size: 1.3em;
 }
 `
 

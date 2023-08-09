@@ -49,7 +49,6 @@ justify-content: center;
 align-items: center;
 display: flex;
 flex-wrap: wrap;
-margin: auto;
 `
 const FlipCard = styled.div`
 position: relative;
