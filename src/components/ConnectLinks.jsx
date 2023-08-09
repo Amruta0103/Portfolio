@@ -31,7 +31,7 @@ const ConnectLinks = () => {
       </LinksBlock>
       <FooterBox>
       <LastText>
-        Made with ❤ by Amruta Dharap
+        Made with ⁠<span style={{strokeWidth:'2'}}>♡</span> by Amruta Dharap
       </LastText>
     </FooterBox>
     </ConnectLinksBox>
