@@ -50,11 +50,7 @@ position: relative;
 const ConnectInfo = styled.div`
 margin: 1rem auto;
 font-weight: 300;
-font-size: 2rem;
 width: 50%;
-@media (max-width: 800px){
-  font-size: 2.5rem;
-}
 `
 const LinksBlock = styled.div`
 font-size: 20px;

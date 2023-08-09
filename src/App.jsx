@@ -9,7 +9,7 @@ import ConnectLinks from './components/ConnectLinks';
 function App() {
   return (
     <AppBg>
-      <ThemeProvider theme={ lightTheme}>
+      <ThemeProvider theme={lightTheme}>
         <GlobalStyles />
         <Headers>
           <Header />
@@ -51,8 +51,7 @@ background-image: linear-gradient(
 
 `
 const AppBox = styled.div`
-height: 100%;
-max-height: 80%;
+height: 80%;
 width: 80%;
 margin: auto;
 padding: 0px;

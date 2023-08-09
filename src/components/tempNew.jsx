@@ -23,6 +23,7 @@ flex-direction: column;
 justify-content: center;
 align-items: center;
 height: 100%;
+margin: auto;
 position: relative;
 `
 const HeadLineTitle = styled.div`
@@ -30,9 +31,9 @@ margin: auto auto auto 3rem;
 font-size: 3.5rem;
 color: ${props => props.theme.text};
 font-family: 'Space Grotesk', sans-serif;
-@media (max-width: 768px){
+@media (max-width: 600px){
   margin: 1rem auto;
-  font-size: 2.3rem;
+  font-size: 2rem;
 }
 `
 const SubTitle = styled.div`
@@ -47,21 +48,19 @@ margin: auto 3rem auto auto;
 `
 const AboutMeSub = styled.div`
 margin: 1rem auto;
-@media (max-width: 768px){
-  margin: auto;
-}
 `
 const Msg = styled.div`
 width: 60%;
-font-size: 1.5rem;
 font-weight: 100;
 text-align: center;
 padding: 2rem 1rem;
 margin: auto;
 border-radius: 1rem;
-@media (max-width: 550px){
-  width: 100%;
-  padding: 0rem;
+@media (max-width: 768px){
+  font-size: 1em;
+}
+@media (min-width: 1080px){
+  font-size: 2em;
 }
 `
 

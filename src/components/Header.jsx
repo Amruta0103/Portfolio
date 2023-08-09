@@ -34,7 +34,6 @@ position: sticky;
 width: 100%;
 `
 const HeaderBox = styled.div`
-font-size: 14px;
 font-weight: 400;
 width: inherit;
 margin: 0rem;
@@ -42,7 +41,6 @@ text-align: center;
 color: ${props =>props.theme.background};
 `
 const A = styled.a`
-  font-size inherit;
   text-decoration: none;
   color: ${props => props.theme.text};
 `
